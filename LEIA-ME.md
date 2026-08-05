@@ -58,14 +58,17 @@ python robo_ceagesp.py
 
 ## Execução automática na nuvem (GitHub Actions)
 
-Opção escolhida: o robô roda nos servidores do GitHub, **independente do seu PC estar
-ligado**. A configuração está em `.github/workflows/coleta-ceagesp.yml`.
+**Ativo** desde 04/08/2026 em <https://github.com/tbrena/robo-ceagesp> (repositório privado).
+O robô roda nos servidores do GitHub, **independente do seu PC estar ligado**.
+A configuração está em `.github/workflows/coleta-ceagesp.yml`.
 
 - Roda **09:00 e 16:00 (horário de Brasília), de segunda a sexta**.
 - Após cada coleta, os arquivos da pasta `dados` são atualizados no próprio repositório —
   é de lá que você baixa o `cotacoes_pescado.xlsx`.
 - A planilha também fica anexada a cada execução, na aba **Actions**, por 90 dias.
 - Dá para disparar na hora pela aba **Actions → Coleta CEAGESP - Pescado → Run workflow**.
+  O campo *Parametros extras* aceita as mesmas opções da linha de comando — deixe vazio
+  para a coleta normal, ou use `--todas` / `--tudo` / `--data 03/08/2026`.
 - É gratuito nessa escala (cada execução leva menos de um minuto).
 
 Pontos a saber:
