@@ -82,42 +82,24 @@ Pontos a saber:
 
 ## Alternativa: execução automática no Windows
 
-`executar_robo.bat` é o ponto de entrada para o Agendador de Tarefas do Windows.
-O caminho do Python está fixo no `.bat`; se o Python for reinstalado em outro lugar,
-ajuste essa linha.
-
-Para ativar o agendamento **às 09:00 e às 16:00, de segunda a sexta**, rode estes dois
-comandos no PowerShell (não precisa de administrador — a tarefa fica no seu usuário):
+Serve como plano B se a coleta na nuvem parar de funcionar. Abra o PowerShell na pasta do
+projeto e rode (não precisa de administrador — as tarefas ficam no seu usuário):
 
 ```powershell
-schtasks /Create /TN "Robo CEAGESP Pescado - manha" /TR "'C:\Users\thiago.IEA\Desktop\robo-ceagesp\executar_robo.bat'" /SC WEEKLY /D MON,TUE,WED,THU,FRI /ST 09:00 /F
+.\agendar_windows.ps1
 ```
 
-```powershell
-schtasks /Create /TN "Robo CEAGESP Pescado - tarde" /TR "'C:\Users\thiago.IEA\Desktop\robo-ceagesp\executar_robo.bat'" /SC WEEKLY /D MON,TUE,WED,THU,FRI /ST 16:00 /F
-```
-
-Conferir, rodar na hora ou remover:
-
-```powershell
-schtasks /Query /TN "Robo CEAGESP Pescado - manha" /V /FO LIST
-```
-
-```powershell
-schtasks /Run /TN "Robo CEAGESP Pescado - manha"
-```
-
-```powershell
-schtasks /Delete /TN "Robo CEAGESP Pescado - manha" /F
-```
+Isso cria duas tarefas, às 09:00 e às 16:00, de segunda a sexta, apontando para
+`executar_robo.bat`. Se o PC estiver desligado no horário, a tarefa roda assim que ele for
+ligado. Para outro horário, `.\agendar_windows.ps1 -Horarios 07:30`; para desfazer,
+`.\agendar_windows.ps1 -Remover`.
 
 Rodar duas vezes ao dia não gera duplicidade: a segunda execução só busca boletim que
-ainda não estiver no histórico. O computador precisa estar ligado e com seu usuário
-logado no horário.
+ainda não estiver no histórico.
 
 ## Requisitos
 
-Python 3 com `requests` e `openpyxl` (ambos já instalados nesta máquina).
+Python 3 com `requests` e `openpyxl` — instale com `pip install -r requirements.txt`.
 
 ## Observações técnicas
 
