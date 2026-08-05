@@ -6,6 +6,11 @@ on:
     - cron: '0 12 * * 1-5'   # 09:00 de Brasilia, seg a sex
     - cron: '0 19 * * 1-5'   # 16:00 de Brasilia, seg a sex
   workflow_dispatch:          # permite disparar manualmente pela aba Actions
+    inputs:
+      parametros:
+        description: 'Parametros extras (ex.: --todas, --tudo, --data 03/08/2026)'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -22,10 +27,10 @@ jobs:
 
     steps:
       - name: Baixar o repositorio
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Preparar o Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
@@ -33,10 +38,12 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Coletar cotacoes
-        run: python robo_ceagesp.py
+        env:
+          PARAMETROS: ${{ inputs.parametros }}
+        run: python robo_ceagesp.py $PARAMETROS
 
       - name: Disponibilizar planilha para download
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: cotacoes-pescado
           path: dados/
