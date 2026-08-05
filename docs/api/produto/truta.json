@@ -1,0 +1,509 @@
+{
+ "fonte": "CEAGESP - Entreposto Terminal de Sao Paulo (ETSP)",
+ "fonte_url": "https://ceagesp.gov.br/cotacoes/",
+ "categoria": "PESCADOS",
+ "moeda": "BRL",
+ "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
+ "atualizado_em": "2026-08-05T00:10:00-03:00",
+ "produto": "TRUTA",
+ "produto_id": "truta",
+ "total": 62,
+ "dados": [
+  {
+   "data": "2026-01-07",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.07,
+   "comum": 41.07,
+   "maior": 41.07
+  },
+  {
+   "data": "2026-01-09",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.0,
+   "comum": 42.0,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-01-12",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.59,
+   "comum": 40.59,
+   "maior": 40.59
+  },
+  {
+   "data": "2026-01-14",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.0,
+   "comum": 40.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-01-16",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.36,
+   "comum": 42.36,
+   "maior": 42.36
+  },
+  {
+   "data": "2026-01-19",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.07,
+   "comum": 41.07,
+   "maior": 41.07
+  },
+  {
+   "data": "2026-01-21",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.0,
+   "comum": 40.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-01-23",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.79,
+   "comum": 40.79,
+   "maior": 40.79
+  },
+  {
+   "data": "2026-01-30",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.0,
+   "comum": 42.0,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-02-02",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.0,
+   "comum": 41.0,
+   "maior": 41.0
+  },
+  {
+   "data": "2026-02-04",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.0,
+   "comum": 41.0,
+   "maior": 41.0
+  },
+  {
+   "data": "2026-02-06",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.0,
+   "comum": 40.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-02-09",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.0,
+   "comum": 41.0,
+   "maior": 41.0
+  },
+  {
+   "data": "2026-02-11",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.86,
+   "comum": 40.86,
+   "maior": 40.86
+  },
+  {
+   "data": "2026-02-13",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.0,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-02-20",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.0,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-02-25",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.6,
+   "comum": 39.6,
+   "maior": 40.6
+  },
+  {
+   "data": "2026-02-27",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.34,
+   "comum": 42.67,
+   "maior": 43.33
+  },
+  {
+   "data": "2026-03-13",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 36.35,
+   "comum": 38.81,
+   "maior": 40.81
+  },
+  {
+   "data": "2026-03-16",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.81,
+   "comum": 39.81,
+   "maior": 40.81
+  },
+  {
+   "data": "2026-03-18",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.67,
+   "comum": 41.34,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-03-20",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.0,
+   "comum": 40.67,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-03-23",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.21,
+   "comum": 14.68,
+   "maior": 15.15
+  },
+  {
+   "data": "2026-03-27",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.76,
+   "comum": 40.45,
+   "maior": 41.14
+  },
+  {
+   "data": "2026-03-30",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.07,
+   "comum": 39.76,
+   "maior": 40.76
+  },
+  {
+   "data": "2026-03-31",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.4,
+   "comum": 40.1,
+   "maior": 40.8
+  },
+  {
+   "data": "2026-04-01",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.3,
+   "comum": 41.0,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-04-02",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.54,
+   "comum": 42.53,
+   "maior": 43.53
+  },
+  {
+   "data": "2026-04-06",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.36,
+   "comum": 40.03,
+   "maior": 41.03
+  },
+  {
+   "data": "2026-04-13",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.58,
+   "comum": 42.08,
+   "maior": 43.0
+  },
+  {
+   "data": "2026-04-22",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.29,
+   "comum": 39.79,
+   "maior": 40.79
+  },
+  {
+   "data": "2026-04-24",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.0,
+   "comum": 41.0,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-04-27",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.0,
+   "comum": 41.0,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-05-04",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.0,
+   "comum": 42.0,
+   "maior": 43.0
+  },
+  {
+   "data": "2026-05-06",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.0,
+   "comum": 40.5,
+   "maior": 41.2
+  },
+  {
+   "data": "2026-05-08",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.8,
+   "comum": 40.7,
+   "maior": 41.6
+  },
+  {
+   "data": "2026-05-11",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.83,
+   "comum": 40.33,
+   "maior": 40.83
+  },
+  {
+   "data": "2026-05-13",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.71,
+   "comum": 40.21,
+   "maior": 40.7
+  },
+  {
+   "data": "2026-05-15",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.6,
+   "comum": 40.4,
+   "maior": 41.2
+  },
+  {
+   "data": "2026-05-18",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.67,
+   "comum": 40.16,
+   "maior": 40.67
+  },
+  {
+   "data": "2026-05-20",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.96,
+   "comum": 40.46,
+   "maior": 41.16
+  },
+  {
+   "data": "2026-05-22",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.41,
+   "comum": 40.91,
+   "maior": 41.41
+  },
+  {
+   "data": "2026-05-25",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.76,
+   "comum": 40.25,
+   "maior": 40.75
+  },
+  {
+   "data": "2026-06-08",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.0,
+   "comum": 39.5,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-06-10",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.31,
+   "comum": 39.01,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-06-12",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.2,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-06-15",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.2,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-06-17",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.34,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-06-22",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.0,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-06-26",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 37.0,
+   "comum": 38.0,
+   "maior": 39.0
+  },
+  {
+   "data": "2026-06-29",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 37.8,
+   "comum": 37.9,
+   "maior": 38.0
+  },
+  {
+   "data": "2026-07-01",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.2,
+   "comum": 38.44,
+   "maior": 38.66
+  },
+  {
+   "data": "2026-07-03",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.0,
+   "comum": 39.83,
+   "maior": 40.67
+  },
+  {
+   "data": "2026-07-06",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.0,
+   "comum": 41.0,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-07-08",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 36.07,
+   "comum": 37.72,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-07-13",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 37.93,
+   "comum": 38.61,
+   "maior": 39.28
+  },
+  {
+   "data": "2026-07-15",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 30.0,
+   "comum": 35.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-07-20",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.0,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-07-24",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 36.4,
+   "comum": 37.95,
+   "maior": 39.0
+  },
+  {
+   "data": "2026-07-27",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 36.3,
+   "comum": 36.4,
+   "maior": 36.5
+  },
+  {
+   "data": "2026-07-31",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 37.5,
+   "comum": 38.25,
+   "maior": 39.0
+  },
+  {
+   "data": "2026-08-03",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.0,
+   "comum": 38.5,
+   "maior": 39.0
+  }
+ ]
+}

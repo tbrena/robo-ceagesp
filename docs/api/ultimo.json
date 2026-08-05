@@ -1,0 +1,85 @@
+{
+ "fonte": "CEAGESP - Entreposto Terminal de Sao Paulo (ETSP)",
+ "fonte_url": "https://ceagesp.gov.br/cotacoes/",
+ "categoria": "PESCADOS",
+ "moeda": "BRL",
+ "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
+ "atualizado_em": "2026-08-05T00:10:00-03:00",
+ "data": "2026-08-03",
+ "data_anterior": "2026-07-31",
+ "total": 6,
+ "dados": [
+  {
+   "data": "2026-08-03",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.52,
+   "comum": 43.41,
+   "maior": 44.34,
+   "variacao_percentual": 1.31,
+   "comum_anterior": 42.85
+  },
+  {
+   "data": "2026-08-03",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.8,
+   "comum": 9.9,
+   "maior": 10.0,
+   "variacao_percentual": 11.24,
+   "comum_anterior": 8.9
+  },
+  {
+   "data": "2026-08-03",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 25.5,
+   "comum": 26.0,
+   "maior": 26.5,
+   "variacao_percentual": 0.97,
+   "comum_anterior": 25.75
+  },
+  {
+   "data": "2026-08-03",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.0,
+   "comum": 13.3,
+   "maior": 13.5,
+   "variacao_percentual": 3.1,
+   "comum_anterior": 12.9
+  },
+  {
+   "data": "2026-08-03",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.83,
+   "comum": 12.11,
+   "maior": 12.34,
+   "variacao_percentual": -3.27,
+   "comum_anterior": 12.52
+  },
+  {
+   "data": "2026-08-03",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.0,
+   "comum": 38.5,
+   "maior": 39.0,
+   "variacao_percentual": 0.65,
+   "comum_anterior": 38.25
+  }
+ ]
+}

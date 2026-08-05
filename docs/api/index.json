@@ -1,0 +1,45 @@
+{
+ "fonte": "CEAGESP - Entreposto Terminal de Sao Paulo (ETSP)",
+ "fonte_url": "https://ceagesp.gov.br/cotacoes/",
+ "categoria": "PESCADOS",
+ "moeda": "BRL",
+ "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
+ "atualizado_em": "2026-08-05T00:10:00-03:00",
+ "descricao": "API estatica de cotacoes de pescado no atacado da CEAGESP.",
+ "periodo": {
+  "inicio": "2026-01-07",
+  "fim": "2026-08-03"
+ },
+ "totais": {
+  "boletins": 74,
+  "registros": 333,
+  "produtos": 6
+ },
+ "endpoints": [
+  {
+   "url": "https://tbrena.github.io/robo-ceagesp/api/index.json",
+   "descricao": "este indice"
+  },
+  {
+   "url": "https://tbrena.github.io/robo-ceagesp/api/cotacoes.json",
+   "descricao": "historico completo"
+  },
+  {
+   "url": "https://tbrena.github.io/robo-ceagesp/api/cotacoes.csv",
+   "descricao": "historico completo em CSV (UTF-8, virgula)"
+  },
+  {
+   "url": "https://tbrena.github.io/robo-ceagesp/api/ultimo.json",
+   "descricao": "ultimo boletim, com variacao sobre o anterior"
+  },
+  {
+   "url": "https://tbrena.github.io/robo-ceagesp/api/produtos.json",
+   "descricao": "produtos monitorados e seus identificadores"
+  },
+  {
+   "url": "https://tbrena.github.io/robo-ceagesp/api/produto/{produto_id}.json",
+   "descricao": "serie historica de um produto"
+  }
+ ],
+ "atualizacao": "Duas vezes por dia util, as 09:00 e as 16:00 (horario de Brasilia). A CEAGESP publica o boletim as segundas, quartas e sextas."
+}

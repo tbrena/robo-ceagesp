@@ -1,0 +1,47 @@
+{
+ "fonte": "CEAGESP - Entreposto Terminal de Sao Paulo (ETSP)",
+ "fonte_url": "https://ceagesp.gov.br/cotacoes/",
+ "categoria": "PESCADOS",
+ "moeda": "BRL",
+ "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
+ "atualizado_em": "2026-08-05T00:10:00-03:00",
+ "total": 6,
+ "dados": [
+  {
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "url": "https://tbrena.github.io/robo-ceagesp/api/produto/file-de-tilapia.json",
+   "boletins": 74
+  },
+  {
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "url": "https://tbrena.github.io/robo-ceagesp/api/produto/pangasius.json",
+   "boletins": 37
+  },
+  {
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "url": "https://tbrena.github.io/robo-ceagesp/api/produto/pintado.json",
+   "boletins": 38
+  },
+  {
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "url": "https://tbrena.github.io/robo-ceagesp/api/produto/tambaqui.json",
+   "boletins": 48
+  },
+  {
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "url": "https://tbrena.github.io/robo-ceagesp/api/produto/tilapia.json",
+   "boletins": 74
+  },
+  {
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "url": "https://tbrena.github.io/robo-ceagesp/api/produto/truta.json",
+   "boletins": 62
+  }
+ ]
+}

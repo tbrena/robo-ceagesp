@@ -1,0 +1,3341 @@
+{
+ "fonte": "CEAGESP - Entreposto Terminal de Sao Paulo (ETSP)",
+ "fonte_url": "https://ceagesp.gov.br/cotacoes/",
+ "categoria": "PESCADOS",
+ "moeda": "BRL",
+ "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
+ "atualizado_em": "2026-08-05T00:10:00-03:00",
+ "total": 333,
+ "dados": [
+  {
+   "data": "2026-01-07",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.5,
+   "comum": 41.5,
+   "maior": 41.5
+  },
+  {
+   "data": "2026-01-07",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 10.0,
+   "comum": 10.0,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-01-07",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 28.0,
+   "comum": 28.0,
+   "maior": 28.0
+  },
+  {
+   "data": "2026-01-07",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 15.67,
+   "comum": 15.67,
+   "maior": 15.67
+  },
+  {
+   "data": "2026-01-07",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.85,
+   "comum": 11.85,
+   "maior": 11.85
+  },
+  {
+   "data": "2026-01-07",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.07,
+   "comum": 41.07,
+   "maior": 41.07
+  },
+  {
+   "data": "2026-01-09",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.25,
+   "comum": 42.25,
+   "maior": 42.25
+  },
+  {
+   "data": "2026-01-09",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 10.0,
+   "comum": 10.0,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-01-09",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 16.0,
+   "comum": 16.0,
+   "maior": 16.0
+  },
+  {
+   "data": "2026-01-09",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.91,
+   "comum": 11.91,
+   "maior": 11.91
+  },
+  {
+   "data": "2026-01-09",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.0,
+   "comum": 42.0,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-01-12",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.66,
+   "comum": 41.66,
+   "maior": 41.66
+  },
+  {
+   "data": "2026-01-12",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 10.0,
+   "comum": 10.0,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-01-12",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 27.0,
+   "comum": 27.0,
+   "maior": 27.0
+  },
+  {
+   "data": "2026-01-12",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 15.33,
+   "comum": 15.33,
+   "maior": 15.33
+  },
+  {
+   "data": "2026-01-12",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.82,
+   "comum": 11.82,
+   "maior": 11.82
+  },
+  {
+   "data": "2026-01-12",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.59,
+   "comum": 40.59,
+   "maior": 40.59
+  },
+  {
+   "data": "2026-01-14",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 43.29,
+   "comum": 43.47,
+   "maior": 43.67
+  },
+  {
+   "data": "2026-01-14",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 17.0,
+   "comum": 17.0,
+   "maior": 17.0
+  },
+  {
+   "data": "2026-01-14",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.0,
+   "comum": 12.0,
+   "maior": 12.0
+  },
+  {
+   "data": "2026-01-14",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.0,
+   "comum": 40.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-01-16",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.78,
+   "comum": 41.95,
+   "maior": 42.13
+  },
+  {
+   "data": "2026-01-16",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 26.0,
+   "comum": 26.0,
+   "maior": 26.0
+  },
+  {
+   "data": "2026-01-16",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 28.0,
+   "comum": 28.0,
+   "maior": 28.0
+  },
+  {
+   "data": "2026-01-16",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 17.0,
+   "comum": 17.0,
+   "maior": 17.0
+  },
+  {
+   "data": "2026-01-16",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.92,
+   "comum": 11.92,
+   "maior": 11.92
+  },
+  {
+   "data": "2026-01-16",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.36,
+   "comum": 42.36,
+   "maior": 42.36
+  },
+  {
+   "data": "2026-01-19",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.87,
+   "comum": 41.87,
+   "maior": 41.87
+  },
+  {
+   "data": "2026-01-19",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 18.88,
+   "comum": 18.88,
+   "maior": 18.88
+  },
+  {
+   "data": "2026-01-19",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 15.5,
+   "comum": 15.5,
+   "maior": 15.5
+  },
+  {
+   "data": "2026-01-19",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.15,
+   "comum": 12.15,
+   "maior": 12.15
+  },
+  {
+   "data": "2026-01-19",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.07,
+   "comum": 41.07,
+   "maior": 41.07
+  },
+  {
+   "data": "2026-01-21",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.24,
+   "comum": 42.24,
+   "maior": 42.24
+  },
+  {
+   "data": "2026-01-21",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.01,
+   "comum": 12.01,
+   "maior": 12.01
+  },
+  {
+   "data": "2026-01-21",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.0,
+   "comum": 40.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-01-23",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.81,
+   "comum": 41.81,
+   "maior": 41.81
+  },
+  {
+   "data": "2026-01-23",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 10.0,
+   "comum": 10.0,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-01-23",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 28.0,
+   "comum": 28.0,
+   "maior": 28.0
+  },
+  {
+   "data": "2026-01-23",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 17.0,
+   "comum": 17.0,
+   "maior": 17.0
+  },
+  {
+   "data": "2026-01-23",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.22,
+   "comum": 12.22,
+   "maior": 12.22
+  },
+  {
+   "data": "2026-01-23",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.79,
+   "comum": 40.79,
+   "maior": 40.79
+  },
+  {
+   "data": "2026-01-26",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.63,
+   "comum": 42.63,
+   "maior": 42.63
+  },
+  {
+   "data": "2026-01-26",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 26.0,
+   "comum": 26.0,
+   "maior": 26.0
+  },
+  {
+   "data": "2026-01-26",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 15.0,
+   "comum": 15.0,
+   "maior": 15.0
+  },
+  {
+   "data": "2026-01-26",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.11,
+   "comum": 12.11,
+   "maior": 12.11
+  },
+  {
+   "data": "2026-01-30",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.26,
+   "comum": 42.26,
+   "maior": 42.26
+  },
+  {
+   "data": "2026-01-30",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.2,
+   "comum": 12.2,
+   "maior": 12.2
+  },
+  {
+   "data": "2026-01-30",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.0,
+   "comum": 42.0,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-02-02",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.29,
+   "comum": 42.32,
+   "maior": 42.35
+  },
+  {
+   "data": "2026-02-02",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 10.0,
+   "comum": 10.0,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-02-02",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 29.0,
+   "comum": 29.0,
+   "maior": 29.0
+  },
+  {
+   "data": "2026-02-02",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.66,
+   "comum": 14.66,
+   "maior": 14.66
+  },
+  {
+   "data": "2026-02-02",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.99,
+   "comum": 12.1,
+   "maior": 12.21
+  },
+  {
+   "data": "2026-02-02",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.0,
+   "comum": 41.0,
+   "maior": 41.0
+  },
+  {
+   "data": "2026-02-04",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 37.84,
+   "comum": 37.84,
+   "maior": 37.84
+  },
+  {
+   "data": "2026-02-04",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 18.98,
+   "comum": 18.98,
+   "maior": 18.98
+  },
+  {
+   "data": "2026-02-04",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 29.0,
+   "comum": 29.0,
+   "maior": 29.0
+  },
+  {
+   "data": "2026-02-04",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.5,
+   "comum": 14.5,
+   "maior": 14.5
+  },
+  {
+   "data": "2026-02-04",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.14,
+   "comum": 12.14,
+   "maior": 12.14
+  },
+  {
+   "data": "2026-02-04",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.0,
+   "comum": 41.0,
+   "maior": 41.0
+  },
+  {
+   "data": "2026-02-06",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.09,
+   "comum": 42.09,
+   "maior": 42.09
+  },
+  {
+   "data": "2026-02-06",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 10.0,
+   "comum": 10.0,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-02-06",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.01,
+   "comum": 12.01,
+   "maior": 12.01
+  },
+  {
+   "data": "2026-02-06",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.0,
+   "comum": 40.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-02-09",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.95,
+   "comum": 41.95,
+   "maior": 41.95
+  },
+  {
+   "data": "2026-02-09",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 27.2,
+   "comum": 27.2,
+   "maior": 27.2
+  },
+  {
+   "data": "2026-02-09",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.0,
+   "comum": 14.0,
+   "maior": 14.0
+  },
+  {
+   "data": "2026-02-09",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.16,
+   "comum": 12.16,
+   "maior": 12.16
+  },
+  {
+   "data": "2026-02-09",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.0,
+   "comum": 41.0,
+   "maior": 41.0
+  },
+  {
+   "data": "2026-02-11",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.73,
+   "comum": 42.73,
+   "maior": 42.73
+  },
+  {
+   "data": "2026-02-11",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 10.0,
+   "comum": 10.0,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-02-11",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 28.0,
+   "comum": 28.0,
+   "maior": 28.0
+  },
+  {
+   "data": "2026-02-11",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.0,
+   "comum": 14.2,
+   "maior": 14.4
+  },
+  {
+   "data": "2026-02-11",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.13,
+   "comum": 12.13,
+   "maior": 12.13
+  },
+  {
+   "data": "2026-02-11",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.86,
+   "comum": 40.86,
+   "maior": 40.86
+  },
+  {
+   "data": "2026-02-13",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.43,
+   "comum": 41.44,
+   "maior": 41.87
+  },
+  {
+   "data": "2026-02-13",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 27.0,
+   "comum": 28.0,
+   "maior": 28.0
+  },
+  {
+   "data": "2026-02-13",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 15.62,
+   "comum": 16.13,
+   "maior": 16.63
+  },
+  {
+   "data": "2026-02-13",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.32,
+   "comum": 12.28,
+   "maior": 12.32
+  },
+  {
+   "data": "2026-02-13",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.0,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-02-20",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.72,
+   "comum": 40.71,
+   "maior": 41.45
+  },
+  {
+   "data": "2026-02-20",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.77,
+   "comum": 15.47,
+   "maior": 15.77
+  },
+  {
+   "data": "2026-02-20",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 27.0,
+   "comum": 28.0,
+   "maior": 28.0
+  },
+  {
+   "data": "2026-02-20",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.19,
+   "comum": 13.19,
+   "maior": 14.2
+  },
+  {
+   "data": "2026-02-20",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 10.0,
+   "comum": 11.0,
+   "maior": 12.0
+  },
+  {
+   "data": "2026-02-20",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.0,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-02-23",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.7,
+   "comum": 40.88,
+   "maior": 42.15
+  },
+  {
+   "data": "2026-02-23",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 25.0,
+   "comum": 26.0,
+   "maior": 27.0
+  },
+  {
+   "data": "2026-02-23",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.24,
+   "comum": 14.12,
+   "maior": 15.0
+  },
+  {
+   "data": "2026-02-23",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.01,
+   "comum": 12.49,
+   "maior": 13.0
+  },
+  {
+   "data": "2026-02-25",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.75,
+   "comum": 40.75,
+   "maior": 41.14
+  },
+  {
+   "data": "2026-02-25",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.0,
+   "comum": 9.5,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-02-25",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.45,
+   "comum": 12.46,
+   "maior": 12.8
+  },
+  {
+   "data": "2026-02-25",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.6,
+   "comum": 39.6,
+   "maior": 40.6
+  },
+  {
+   "data": "2026-02-27",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.31,
+   "comum": 43.31,
+   "maior": 43.79
+  },
+  {
+   "data": "2026-02-27",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.75,
+   "comum": 13.4,
+   "maior": 13.55
+  },
+  {
+   "data": "2026-02-27",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.34,
+   "comum": 42.67,
+   "maior": 43.33
+  },
+  {
+   "data": "2026-03-11",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 43.0,
+   "comum": 44.01,
+   "maior": 44.25
+  },
+  {
+   "data": "2026-03-11",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.0,
+   "comum": 13.0,
+   "maior": 13.0
+  },
+  {
+   "data": "2026-03-13",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.05,
+   "comum": 43.03,
+   "maior": 43.49
+  },
+  {
+   "data": "2026-03-13",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 24.5,
+   "comum": 26.0,
+   "maior": 27.5
+  },
+  {
+   "data": "2026-03-13",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.42,
+   "comum": 12.92,
+   "maior": 13.06
+  },
+  {
+   "data": "2026-03-13",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.68,
+   "comum": 12.69,
+   "maior": 12.9
+  },
+  {
+   "data": "2026-03-13",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 36.35,
+   "comum": 38.81,
+   "maior": 40.81
+  },
+  {
+   "data": "2026-03-16",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.23,
+   "comum": 40.24,
+   "maior": 41.15
+  },
+  {
+   "data": "2026-03-16",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 25.5,
+   "comum": 27.0,
+   "maior": 27.5
+  },
+  {
+   "data": "2026-03-16",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.5,
+   "comum": 12.5,
+   "maior": 13.5
+  },
+  {
+   "data": "2026-03-16",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 10.66,
+   "comum": 11.66,
+   "maior": 12.66
+  },
+  {
+   "data": "2026-03-16",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.81,
+   "comum": 39.81,
+   "maior": 40.81
+  },
+  {
+   "data": "2026-03-18",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.64,
+   "comum": 41.3,
+   "maior": 43.24
+  },
+  {
+   "data": "2026-03-18",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.0,
+   "comum": 12.98,
+   "maior": 12.99
+  },
+  {
+   "data": "2026-03-18",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.67,
+   "comum": 41.34,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-03-20",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 34.39,
+   "comum": 37.03,
+   "maior": 37.85
+  },
+  {
+   "data": "2026-03-20",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 8.0,
+   "comum": 9.0,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-03-20",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.38,
+   "comum": 12.26,
+   "maior": 12.83
+  },
+  {
+   "data": "2026-03-20",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.0,
+   "comum": 40.67,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-03-23",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.52,
+   "comum": 39.53,
+   "maior": 40.53
+  },
+  {
+   "data": "2026-03-23",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.0,
+   "comum": 9.5,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-03-23",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.21,
+   "comum": 11.82,
+   "maior": 12.32
+  },
+  {
+   "data": "2026-03-23",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.21,
+   "comum": 14.68,
+   "maior": 15.15
+  },
+  {
+   "data": "2026-03-25",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.54,
+   "comum": 42.82,
+   "maior": 43.1
+  },
+  {
+   "data": "2026-03-25",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 28.0,
+   "comum": 28.0,
+   "maior": 28.0
+  },
+  {
+   "data": "2026-03-25",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 26.0,
+   "comum": 26.5,
+   "maior": 27.0
+  },
+  {
+   "data": "2026-03-25",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.68,
+   "comum": 14.84,
+   "maior": 15.0
+  },
+  {
+   "data": "2026-03-25",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.22,
+   "comum": 14.23,
+   "maior": 14.24
+  },
+  {
+   "data": "2026-03-27",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.62,
+   "comum": 42.29,
+   "maior": 42.97
+  },
+  {
+   "data": "2026-03-27",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.8,
+   "comum": 9.9,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-03-27",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 23.78,
+   "comum": 24.28,
+   "maior": 25.0
+  },
+  {
+   "data": "2026-03-27",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.41,
+   "comum": 13.7,
+   "maior": 14.15
+  },
+  {
+   "data": "2026-03-27",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.83,
+   "comum": 13.5,
+   "maior": 14.15
+  },
+  {
+   "data": "2026-03-27",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.76,
+   "comum": 40.45,
+   "maior": 41.14
+  },
+  {
+   "data": "2026-03-30",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.74,
+   "comum": 42.6,
+   "maior": 43.45
+  },
+  {
+   "data": "2026-03-30",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.0,
+   "comum": 9.5,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-03-30",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 25.0,
+   "comum": 26.0,
+   "maior": 27.0
+  },
+  {
+   "data": "2026-03-30",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.58,
+   "comum": 15.14,
+   "maior": 15.7
+  },
+  {
+   "data": "2026-03-30",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.57,
+   "comum": 13.86,
+   "maior": 14.15
+  },
+  {
+   "data": "2026-03-30",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.07,
+   "comum": 39.76,
+   "maior": 40.76
+  },
+  {
+   "data": "2026-03-31",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 44.28,
+   "comum": 45.05,
+   "maior": 45.85
+  },
+  {
+   "data": "2026-03-31",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 28.0,
+   "comum": 28.5,
+   "maior": 29.0
+  },
+  {
+   "data": "2026-03-31",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.13,
+   "comum": 14.52,
+   "maior": 15.1
+  },
+  {
+   "data": "2026-03-31",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.1,
+   "comum": 14.54,
+   "maior": 15.24
+  },
+  {
+   "data": "2026-03-31",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.4,
+   "comum": 40.1,
+   "maior": 40.8
+  },
+  {
+   "data": "2026-04-01",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.35,
+   "comum": 43.87,
+   "maior": 44.52
+  },
+  {
+   "data": "2026-04-01",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 28.5,
+   "comum": 29.0,
+   "maior": 30.0
+  },
+  {
+   "data": "2026-04-01",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.78,
+   "comum": 14.2,
+   "maior": 14.84
+  },
+  {
+   "data": "2026-04-01",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.97,
+   "comum": 13.38,
+   "maior": 13.8
+  },
+  {
+   "data": "2026-04-01",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.3,
+   "comum": 41.0,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-04-02",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 43.19,
+   "comum": 43.85,
+   "maior": 44.69
+  },
+  {
+   "data": "2026-04-02",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.0,
+   "comum": 11.5,
+   "maior": 12.0
+  },
+  {
+   "data": "2026-04-02",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.96,
+   "comum": 12.33,
+   "maior": 12.71
+  },
+  {
+   "data": "2026-04-02",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.6,
+   "comum": 15.3,
+   "maior": 16.0
+  },
+  {
+   "data": "2026-04-02",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.54,
+   "comum": 42.53,
+   "maior": 43.53
+  },
+  {
+   "data": "2026-04-06",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.8,
+   "comum": 42.57,
+   "maior": 43.42
+  },
+  {
+   "data": "2026-04-06",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.8,
+   "comum": 9.9,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-04-06",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 23.5,
+   "comum": 24.0,
+   "maior": 25.0
+  },
+  {
+   "data": "2026-04-06",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.45,
+   "comum": 11.82,
+   "maior": 12.21
+  },
+  {
+   "data": "2026-04-06",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 15.54,
+   "comum": 16.34,
+   "maior": 17.13
+  },
+  {
+   "data": "2026-04-06",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.36,
+   "comum": 40.03,
+   "maior": 41.03
+  },
+  {
+   "data": "2026-04-10",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.62,
+   "comum": 43.79,
+   "maior": 44.62
+  },
+  {
+   "data": "2026-04-10",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.0,
+   "comum": 12.5,
+   "maior": 13.0
+  },
+  {
+   "data": "2026-04-13",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.13,
+   "comum": 42.91,
+   "maior": 43.69
+  },
+  {
+   "data": "2026-04-13",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.52,
+   "comum": 14.02,
+   "maior": 14.52
+  },
+  {
+   "data": "2026-04-13",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.58,
+   "comum": 42.08,
+   "maior": 43.0
+  },
+  {
+   "data": "2026-04-15",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.86,
+   "comum": 42.86,
+   "maior": 43.89
+  },
+  {
+   "data": "2026-04-15",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.54,
+   "comum": 13.05,
+   "maior": 13.54
+  },
+  {
+   "data": "2026-04-17",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.1,
+   "comum": 43.1,
+   "maior": 44.1
+  },
+  {
+   "data": "2026-04-17",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 27.0,
+   "comum": 27.5,
+   "maior": 28.0
+  },
+  {
+   "data": "2026-04-17",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.5,
+   "comum": 15.0,
+   "maior": 15.5
+  },
+  {
+   "data": "2026-04-17",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.73,
+   "comum": 13.08,
+   "maior": 13.43
+  },
+  {
+   "data": "2026-04-22",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.87,
+   "comum": 42.65,
+   "maior": 43.54
+  },
+  {
+   "data": "2026-04-22",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.0,
+   "comum": 9.5,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-04-22",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 24.58,
+   "comum": 24.75,
+   "maior": 24.92
+  },
+  {
+   "data": "2026-04-22",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.76,
+   "comum": 11.91,
+   "maior": 12.11
+  },
+  {
+   "data": "2026-04-22",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.07,
+   "comum": 13.39,
+   "maior": 13.89
+  },
+  {
+   "data": "2026-04-22",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.29,
+   "comum": 39.79,
+   "maior": 40.79
+  },
+  {
+   "data": "2026-04-24",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 43.11,
+   "comum": 44.1,
+   "maior": 45.09
+  },
+  {
+   "data": "2026-04-24",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 26.0,
+   "comum": 26.5,
+   "maior": 27.0
+  },
+  {
+   "data": "2026-04-24",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.0,
+   "comum": 14.5,
+   "maior": 15.0
+  },
+  {
+   "data": "2026-04-24",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.38,
+   "comum": 12.71,
+   "maior": 13.05
+  },
+  {
+   "data": "2026-04-24",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.0,
+   "comum": 41.0,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-04-27",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.82,
+   "comum": 42.5,
+   "maior": 43.21
+  },
+  {
+   "data": "2026-04-27",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.0,
+   "comum": 11.5,
+   "maior": 12.0
+  },
+  {
+   "data": "2026-04-27",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.22,
+   "comum": 13.31,
+   "maior": 13.41
+  },
+  {
+   "data": "2026-04-27",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.0,
+   "comum": 41.0,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-04-29",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.73,
+   "comum": 43.69,
+   "maior": 44.66
+  },
+  {
+   "data": "2026-04-29",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.0,
+   "comum": 13.3,
+   "maior": 13.5
+  },
+  {
+   "data": "2026-05-04",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 43.01,
+   "comum": 43.92,
+   "maior": 44.85
+  },
+  {
+   "data": "2026-05-04",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 27.0,
+   "comum": 28.0,
+   "maior": 29.0
+  },
+  {
+   "data": "2026-05-04",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.68,
+   "comum": 14.18,
+   "maior": 15.0
+  },
+  {
+   "data": "2026-05-04",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.0,
+   "comum": 13.2,
+   "maior": 13.38
+  },
+  {
+   "data": "2026-05-04",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.0,
+   "comum": 42.0,
+   "maior": 43.0
+  },
+  {
+   "data": "2026-05-06",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.36,
+   "comum": 43.23,
+   "maior": 44.1
+  },
+  {
+   "data": "2026-05-06",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.8,
+   "comum": 9.9,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-05-06",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 25.5,
+   "comum": 26.0,
+   "maior": 26.5
+  },
+  {
+   "data": "2026-05-06",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.35,
+   "comum": 13.76,
+   "maior": 14.17
+  },
+  {
+   "data": "2026-05-06",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.99,
+   "comum": 12.5,
+   "maior": 12.99
+  },
+  {
+   "data": "2026-05-06",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.0,
+   "comum": 40.5,
+   "maior": 41.2
+  },
+  {
+   "data": "2026-05-08",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.87,
+   "comum": 42.59,
+   "maior": 43.35
+  },
+  {
+   "data": "2026-05-08",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.0,
+   "comum": 11.5,
+   "maior": 12.0
+  },
+  {
+   "data": "2026-05-08",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.15,
+   "comum": 14.55,
+   "maior": 15.0
+  },
+  {
+   "data": "2026-05-08",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.57,
+   "comum": 12.84,
+   "maior": 13.07
+  },
+  {
+   "data": "2026-05-08",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.8,
+   "comum": 40.7,
+   "maior": 41.6
+  },
+  {
+   "data": "2026-05-11",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.83,
+   "comum": 42.4,
+   "maior": 43.01
+  },
+  {
+   "data": "2026-05-11",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.0,
+   "comum": 9.5,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-05-11",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.36,
+   "comum": 12.77,
+   "maior": 13.17
+  },
+  {
+   "data": "2026-05-11",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.94,
+   "comum": 13.04,
+   "maior": 13.14
+  },
+  {
+   "data": "2026-05-11",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.83,
+   "comum": 40.33,
+   "maior": 40.83
+  },
+  {
+   "data": "2026-05-13",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.4,
+   "comum": 43.19,
+   "maior": 44.0
+  },
+  {
+   "data": "2026-05-13",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.8,
+   "comum": 9.9,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-05-13",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.96,
+   "comum": 13.24,
+   "maior": 13.73
+  },
+  {
+   "data": "2026-05-13",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.72,
+   "comum": 12.82,
+   "maior": 12.92
+  },
+  {
+   "data": "2026-05-13",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.71,
+   "comum": 40.21,
+   "maior": 40.7
+  },
+  {
+   "data": "2026-05-15",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.2,
+   "comum": 43.05,
+   "maior": 43.9
+  },
+  {
+   "data": "2026-05-15",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.8,
+   "comum": 9.9,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-05-15",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 25.62,
+   "comum": 26.51,
+   "maior": 27.42
+  },
+  {
+   "data": "2026-05-15",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.79,
+   "comum": 14.17,
+   "maior": 14.55
+  },
+  {
+   "data": "2026-05-15",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.82,
+   "comum": 12.98,
+   "maior": 13.19
+  },
+  {
+   "data": "2026-05-15",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.6,
+   "comum": 40.4,
+   "maior": 41.2
+  },
+  {
+   "data": "2026-05-18",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.94,
+   "comum": 42.65,
+   "maior": 43.36
+  },
+  {
+   "data": "2026-05-18",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.8,
+   "comum": 9.9,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-05-18",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 24.33,
+   "comum": 24.98,
+   "maior": 25.65
+  },
+  {
+   "data": "2026-05-18",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.03,
+   "comum": 13.71,
+   "maior": 14.41
+  },
+  {
+   "data": "2026-05-18",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.83,
+   "comum": 13.01,
+   "maior": 13.17
+  },
+  {
+   "data": "2026-05-18",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.67,
+   "comum": 40.16,
+   "maior": 40.67
+  },
+  {
+   "data": "2026-05-20",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.15,
+   "comum": 42.91,
+   "maior": 43.72
+  },
+  {
+   "data": "2026-05-20",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.08,
+   "comum": 13.26,
+   "maior": 13.39
+  },
+  {
+   "data": "2026-05-20",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.96,
+   "comum": 40.46,
+   "maior": 41.16
+  },
+  {
+   "data": "2026-05-22",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.35,
+   "comum": 43.13,
+   "maior": 43.92
+  },
+  {
+   "data": "2026-05-22",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.8,
+   "comum": 9.9,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-05-22",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.24,
+   "comum": 12.69,
+   "maior": 13.12
+  },
+  {
+   "data": "2026-05-22",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.41,
+   "comum": 40.91,
+   "maior": 41.41
+  },
+  {
+   "data": "2026-05-25",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.03,
+   "comum": 42.76,
+   "maior": 43.49
+  },
+  {
+   "data": "2026-05-25",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.8,
+   "comum": 9.9,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-05-25",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.81,
+   "comum": 12.98,
+   "maior": 13.13
+  },
+  {
+   "data": "2026-05-25",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.76,
+   "comum": 40.25,
+   "maior": 40.75
+  },
+  {
+   "data": "2026-06-08",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.72,
+   "comum": 43.67,
+   "maior": 44.6
+  },
+  {
+   "data": "2026-06-08",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.8,
+   "comum": 9.9,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-06-08",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 26.7,
+   "comum": 27.2,
+   "maior": 28.0
+  },
+  {
+   "data": "2026-06-08",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.3,
+   "comum": 13.68,
+   "maior": 14.29
+  },
+  {
+   "data": "2026-06-08",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.87,
+   "comum": 12.98,
+   "maior": 13.09
+  },
+  {
+   "data": "2026-06-08",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.0,
+   "comum": 39.5,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-06-10",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.32,
+   "comum": 43.22,
+   "maior": 44.17
+  },
+  {
+   "data": "2026-06-10",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.29,
+   "comum": 12.66,
+   "maior": 13.03
+  },
+  {
+   "data": "2026-06-10",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.31,
+   "comum": 39.01,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-06-12",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.42,
+   "comum": 43.32,
+   "maior": 44.33
+  },
+  {
+   "data": "2026-06-12",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.24,
+   "comum": 12.62,
+   "maior": 13.0
+  },
+  {
+   "data": "2026-06-12",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.2,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-06-15",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.93,
+   "comum": 43.91,
+   "maior": 44.86
+  },
+  {
+   "data": "2026-06-15",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 27.0,
+   "comum": 27.5,
+   "maior": 28.0
+  },
+  {
+   "data": "2026-06-15",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.88,
+   "comum": 12.99,
+   "maior": 13.11
+  },
+  {
+   "data": "2026-06-15",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.7,
+   "comum": 12.93,
+   "maior": 13.14
+  },
+  {
+   "data": "2026-06-15",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.2,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-06-17",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 43.93,
+   "comum": 44.93,
+   "maior": 45.93
+  },
+  {
+   "data": "2026-06-17",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.87,
+   "comum": 13.02,
+   "maior": 13.14
+  },
+  {
+   "data": "2026-06-17",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.34,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-06-22",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.6,
+   "comum": 43.47,
+   "maior": 44.32
+  },
+  {
+   "data": "2026-06-22",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 26.0,
+   "comum": 27.0,
+   "maior": 28.0
+  },
+  {
+   "data": "2026-06-22",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.99,
+   "comum": 13.2,
+   "maior": 13.54
+  },
+  {
+   "data": "2026-06-22",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.87,
+   "comum": 13.02,
+   "maior": 13.15
+  },
+  {
+   "data": "2026-06-22",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.0,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-06-24",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.91,
+   "comum": 43.97,
+   "maior": 45.04
+  },
+  {
+   "data": "2026-06-24",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.94,
+   "comum": 13.23,
+   "maior": 13.49
+  },
+  {
+   "data": "2026-06-26",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.45,
+   "comum": 42.56,
+   "maior": 43.82
+  },
+  {
+   "data": "2026-06-26",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 26.83,
+   "comum": 27.67,
+   "maior": 28.66
+  },
+  {
+   "data": "2026-06-26",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.86,
+   "comum": 14.57,
+   "maior": 15.44
+  },
+  {
+   "data": "2026-06-26",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.69,
+   "comum": 12.8,
+   "maior": 12.92
+  },
+  {
+   "data": "2026-06-26",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 37.0,
+   "comum": 38.0,
+   "maior": 39.0
+  },
+  {
+   "data": "2026-06-29",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.28,
+   "comum": 41.78,
+   "maior": 42.29
+  },
+  {
+   "data": "2026-06-29",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 26.67,
+   "comum": 27.5,
+   "maior": 28.33
+  },
+  {
+   "data": "2026-06-29",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.0,
+   "comum": 14.5,
+   "maior": 15.0
+  },
+  {
+   "data": "2026-06-29",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.17,
+   "comum": 12.36,
+   "maior": 12.57
+  },
+  {
+   "data": "2026-06-29",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 37.8,
+   "comum": 37.9,
+   "maior": 38.0
+  },
+  {
+   "data": "2026-07-01",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.43,
+   "comum": 42.76,
+   "maior": 44.14
+  },
+  {
+   "data": "2026-07-01",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.19,
+   "comum": 12.56,
+   "maior": 12.9
+  },
+  {
+   "data": "2026-07-01",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.2,
+   "comum": 38.44,
+   "maior": 38.66
+  },
+  {
+   "data": "2026-07-03",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.83,
+   "comum": 42.04,
+   "maior": 43.29
+  },
+  {
+   "data": "2026-07-03",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 24.0,
+   "comum": 24.5,
+   "maior": 25.0
+  },
+  {
+   "data": "2026-07-03",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.48,
+   "comum": 13.94,
+   "maior": 14.4
+  },
+  {
+   "data": "2026-07-03",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.87,
+   "comum": 13.0,
+   "maior": 13.11
+  },
+  {
+   "data": "2026-07-03",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.0,
+   "comum": 39.83,
+   "maior": 40.67
+  },
+  {
+   "data": "2026-07-06",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.62,
+   "comum": 43.53,
+   "maior": 44.44
+  },
+  {
+   "data": "2026-07-06",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 14.0,
+   "comum": 14.5,
+   "maior": 15.0
+  },
+  {
+   "data": "2026-07-06",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.26,
+   "comum": 12.55,
+   "maior": 12.75
+  },
+  {
+   "data": "2026-07-06",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.0,
+   "comum": 41.0,
+   "maior": 42.0
+  },
+  {
+   "data": "2026-07-08",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.11,
+   "comum": 42.58,
+   "maior": 43.16
+  },
+  {
+   "data": "2026-07-08",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.62,
+   "comum": 12.76,
+   "maior": 12.87
+  },
+  {
+   "data": "2026-07-08",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 36.07,
+   "comum": 37.72,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-07-13",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.93,
+   "comum": 42.56,
+   "maior": 43.19
+  },
+  {
+   "data": "2026-07-13",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.61,
+   "comum": 12.72,
+   "maior": 12.83
+  },
+  {
+   "data": "2026-07-13",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 37.93,
+   "comum": 38.61,
+   "maior": 39.28
+  },
+  {
+   "data": "2026-07-15",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 39.23,
+   "comum": 41.41,
+   "maior": 42.93
+  },
+  {
+   "data": "2026-07-15",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.0,
+   "comum": 12.0,
+   "maior": 12.53
+  },
+  {
+   "data": "2026-07-15",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 30.0,
+   "comum": 35.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-07-17",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.42,
+   "comum": 42.59,
+   "maior": 43.17
+  },
+  {
+   "data": "2026-07-17",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 8.0,
+   "comum": 9.0,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-07-17",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 24.0,
+   "comum": 25.0,
+   "maior": 26.0
+  },
+  {
+   "data": "2026-07-17",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.0,
+   "comum": 12.0,
+   "maior": 13.0
+  },
+  {
+   "data": "2026-07-17",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.26,
+   "comum": 11.95,
+   "maior": 12.32
+  },
+  {
+   "data": "2026-07-20",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.03,
+   "comum": 42.75,
+   "maior": 43.47
+  },
+  {
+   "data": "2026-07-20",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.8,
+   "comum": 9.9,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-07-20",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 24.0,
+   "comum": 24.5,
+   "maior": 25.0
+  },
+  {
+   "data": "2026-07-20",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.0,
+   "comum": 13.5,
+   "maior": 14.0
+  },
+  {
+   "data": "2026-07-20",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.22,
+   "comum": 12.39,
+   "maior": 12.54
+  },
+  {
+   "data": "2026-07-20",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.0,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-07-22",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.48,
+   "comum": 43.04,
+   "maior": 43.6
+  },
+  {
+   "data": "2026-07-22",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.8,
+   "comum": 12.9,
+   "maior": 13.0
+  },
+  {
+   "data": "2026-07-24",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.56,
+   "comum": 42.01,
+   "maior": 42.51
+  },
+  {
+   "data": "2026-07-24",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.0,
+   "comum": 9.5,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-07-24",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 24.0,
+   "comum": 24.5,
+   "maior": 25.0
+  },
+  {
+   "data": "2026-07-24",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.82,
+   "comum": 12.94,
+   "maior": 13.05
+  },
+  {
+   "data": "2026-07-24",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.65,
+   "comum": 12.74,
+   "maior": 12.86
+  },
+  {
+   "data": "2026-07-24",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 36.4,
+   "comum": 37.95,
+   "maior": 39.0
+  },
+  {
+   "data": "2026-07-27",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.75,
+   "comum": 42.0,
+   "maior": 42.26
+  },
+  {
+   "data": "2026-07-27",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.0,
+   "comum": 9.5,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-07-27",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 23.0,
+   "comum": 24.0,
+   "maior": 25.0
+  },
+  {
+   "data": "2026-07-27",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.71,
+   "comum": 12.81,
+   "maior": 12.91
+  },
+  {
+   "data": "2026-07-27",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.07,
+   "comum": 12.16,
+   "maior": 12.26
+  },
+  {
+   "data": "2026-07-27",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 36.3,
+   "comum": 36.4,
+   "maior": 36.5
+  },
+  {
+   "data": "2026-07-29",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.34,
+   "comum": 43.23,
+   "maior": 44.13
+  },
+  {
+   "data": "2026-07-29",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 8.0,
+   "comum": 9.0,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-07-29",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.04,
+   "comum": 11.7,
+   "maior": 12.06
+  },
+  {
+   "data": "2026-07-31",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.49,
+   "comum": 42.85,
+   "maior": 43.27
+  },
+  {
+   "data": "2026-07-31",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 8.8,
+   "comum": 8.9,
+   "maior": 9.0
+  },
+  {
+   "data": "2026-07-31",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 25.0,
+   "comum": 25.75,
+   "maior": 26.5
+  },
+  {
+   "data": "2026-07-31",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.8,
+   "comum": 12.9,
+   "maior": 13.0
+  },
+  {
+   "data": "2026-07-31",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.31,
+   "comum": 12.52,
+   "maior": 12.78
+  },
+  {
+   "data": "2026-07-31",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 37.5,
+   "comum": 38.25,
+   "maior": 39.0
+  },
+  {
+   "data": "2026-08-03",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.52,
+   "comum": 43.41,
+   "maior": 44.34
+  },
+  {
+   "data": "2026-08-03",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.8,
+   "comum": 9.9,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-08-03",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 25.5,
+   "comum": 26.0,
+   "maior": 26.5
+  },
+  {
+   "data": "2026-08-03",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.0,
+   "comum": 13.3,
+   "maior": 13.5
+  },
+  {
+   "data": "2026-08-03",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.83,
+   "comum": 12.11,
+   "maior": 12.34
+  },
+  {
+   "data": "2026-08-03",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.0,
+   "comum": 38.5,
+   "maior": 39.0
+  }
+ ]
+}

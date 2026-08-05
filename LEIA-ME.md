@@ -52,6 +52,37 @@ Colunas: `data`, `categoria`, `produto`, `classificacao`, `unidade_peso`, `menor
 
 Log de execução em `logs/robo.log`.
 
+## API para outros sistemas
+
+Os dados também saem em JSON e CSV estáticos, publicados junto com a página e atualizados
+nas mesmas duas coletas diárias. Não há servidor: são arquivos servidos por HTTPS pelo
+GitHub Pages, que envia `Access-Control-Allow-Origin: *` — então dá para consumir até
+direto do navegador. Leitura apenas, sem autenticação.
+
+| Endpoint | Devolve |
+|---|---|
+| `api/index.json` | índice: período coberto, totais e lista de endpoints |
+| `api/ultimo.json` | último boletim, com `variacao_percentual` sobre o anterior |
+| `api/cotacoes.json` | histórico completo |
+| `api/cotacoes.csv` | histórico completo em CSV (Power BI, Excel → Dados → Da Web) |
+| `api/produtos.json` | produtos monitorados e seus identificadores |
+| `api/produto/{id}.json` | série de um produto (`tilapia`, `file-de-tilapia`, `truta`…) |
+
+Base: <https://tbrena.github.io/robo-ceagesp/api/>
+
+Datas em `AAAA-MM-DD`, preços como número decimal com ponto, valores ausentes como `null`.
+
+```python
+import requests
+u = requests.get("https://tbrena.github.io/robo-ceagesp/api/ultimo.json").json()
+for r in u["dados"]:
+    print(r["produto"], r["comum"], r["variacao_percentual"], "%")
+```
+
+Os arquivos são gerados por `gerar_api.py` (rode sozinho com `python gerar_api.py`).
+O cache do GitHub Pages é de poucos minutos, então uma alteração pode demorar um pouco
+para aparecer no consumidor.
+
 ## Histórico importado de planilha
 
 O histórico começa em **07/01/2026**, importado de uma planilha Excel própria; a coleta

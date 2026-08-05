@@ -186,6 +186,8 @@ def main():
     gerar_excel(historico)
     from gerar_pagina import gerar as gerar_pagina
     log.info("Pagina regerada: %s", gerar_pagina(historico))
+    from gerar_api import gerar as gerar_api
+    log.info("API regerada: %s", gerar_api(historico))
     log.info("Concluido.")
     return 0
 

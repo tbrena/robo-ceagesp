@@ -313,8 +313,11 @@ def main():
     if not alvo:
         log.info("Nenhum boletim novo. Historico ja esta em dia (%d registros).", len(historico))
         from gerar_pagina import SAIDA, gerar as gerar_pagina
+        from gerar_api import DIR_API, gerar as gerar_api
         if not os.path.exists(SAIDA):
             log.info("Pagina de consulta ausente - gerando: %s", gerar_pagina(historico))
+        if not os.path.exists(DIR_API):
+            log.info("API ausente - gerando: %s", gerar_api(historico))
         return 0
 
     novos = []
@@ -348,6 +351,8 @@ def main():
 
     from gerar_pagina import gerar as gerar_pagina
     log.info("Pagina de consulta gerada: %s", gerar_pagina(historico))
+    from gerar_api import gerar as gerar_api
+    log.info("Endpoints da API gerados: %s", gerar_api(historico))
 
     log.info("Concluido: %d registros novos/atualizados | historico com %d linhas.",
              len(novos), len(historico))

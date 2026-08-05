@@ -219,6 +219,15 @@ TEMPLATE = r"""<!DOCTYPE html>
   td .ponto { width: 9px; height: 9px; border-radius: 50%; display: inline-block; margin-right: 8px; }
   .vazio { padding: 26px; text-align: center; color: var(--muted); font-size: 14px; }
 
+  code {
+    font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 12.5px;
+    background: var(--realce); border: 1px solid var(--borda);
+    border-radius: 5px; padding: 1px 6px;
+  }
+  .api td { white-space: normal; }
+  .api td:first-child { white-space: nowrap; }
+  .api a { color: inherit; }
+
   footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--grid); font-size: 12.5px; color: var(--muted); }
   footer a { color: inherit; }
 </style>
@@ -295,6 +304,32 @@ TEMPLATE = r"""<!DOCTYPE html>
     <tbody id="corpo"></tbody>
   </table>
   <div class="vazio" id="semDados" hidden>Nenhum registro no filtro selecionado.</div>
+</div>
+
+<h2 style="margin-top:34px">API <span class="tag">para consumir de outro sistema</span></h2>
+<p class="nota">
+  Os mesmos dados em JSON e CSV, atualizados junto com esta página. Sem autenticação e sem
+  limite de uso; leitura apenas. Datas em <code>AAAA-MM-DD</code> e preços como número
+  decimal (ponto). Começe pelo índice, que descreve os demais endpoints.
+</p>
+<div class="rolagem">
+  <table class="api">
+    <thead><tr><th>Endpoint</th><th style="text-align:left">O que devolve</th></tr></thead>
+    <tbody>
+      <tr><td><a href="api/index.json"><code>api/index.json</code></a></td>
+          <td>índice: período coberto, totais e lista de endpoints</td></tr>
+      <tr><td><a href="api/ultimo.json"><code>api/ultimo.json</code></a></td>
+          <td>último boletim, com <code>variacao_percentual</code> sobre o anterior</td></tr>
+      <tr><td><a href="api/cotacoes.json"><code>api/cotacoes.json</code></a></td>
+          <td>histórico completo</td></tr>
+      <tr><td><a href="api/cotacoes.csv"><code>api/cotacoes.csv</code></a></td>
+          <td>histórico completo em CSV — serve para Power BI e Excel (Dados → Da Web)</td></tr>
+      <tr><td><a href="api/produtos.json"><code>api/produtos.json</code></a></td>
+          <td>produtos monitorados e seus identificadores</td></tr>
+      <tr><td><code>api/produto/{id}.json</code></td>
+          <td>série de um produto — ex.: <a href="api/produto/tilapia.json"><code>api/produto/tilapia.json</code></a></td></tr>
+    </tbody>
+  </table>
 </div>
 
 <footer>
