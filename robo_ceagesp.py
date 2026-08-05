@@ -312,6 +312,9 @@ def main():
 
     if not alvo:
         log.info("Nenhum boletim novo. Historico ja esta em dia (%d registros).", len(historico))
+        from gerar_pagina import SAIDA, gerar as gerar_pagina
+        if not os.path.exists(SAIDA):
+            log.info("Pagina de consulta ausente - gerando: %s", gerar_pagina(historico))
         return 0
 
     novos = []
@@ -342,6 +345,9 @@ def main():
 
     gravar_csv(CSV_HISTORICO, historico)
     gerar_excel(historico)
+
+    from gerar_pagina import gerar as gerar_pagina
+    log.info("Pagina de consulta gerada: %s", gerar_pagina(historico))
 
     log.info("Concluido: %d registros novos/atualizados | historico com %d linhas.",
              len(novos), len(historico))

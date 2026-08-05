@@ -1,0 +1,591 @@
+# -*- coding: utf-8 -*-
+"""
+Gera a pagina de consulta (docs/index.html) a partir do historico coletado.
+
+Chamado automaticamente ao final de robo_ceagesp.py. Tambem pode ser rodado
+sozinho para so reconstruir a pagina, sem consultar o site:
+
+    python gerar_pagina.py
+"""
+
+import json
+import os
+from datetime import datetime
+
+BASE = os.path.dirname(os.path.abspath(__file__))
+SAIDA = os.path.join(BASE, "docs", "index.html")
+
+# Paleta categorica validada (dataviz): slots 1..8, claro / escuro.
+# A cor segue o produto (ordem alfabetica fixa), nunca a posicao no filtro.
+PALETA_CLARA = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100",
+                "#e87ba4", "#008300", "#4a3aa7", "#e34948"]
+PALETA_ESCURA = ["#3987e5", "#d95926", "#199e70", "#c98500",
+                 "#d55181", "#008300", "#9085e9", "#e66767"]
+
+
+def gerar(historico, caminho=SAIDA):
+    """historico: lista de dicts como os gravados em dados/historico.csv"""
+    if not historico:
+        return None
+
+    ordenado = sorted(historico, key=lambda r: datetime.strptime(r["data"], "%d/%m/%Y"))
+    datas = sorted({r["data"] for r in ordenado},
+                   key=lambda d: datetime.strptime(d, "%d/%m/%Y"))
+    produtos = sorted({r["produto"] for r in ordenado})
+
+    cores = {p: (PALETA_CLARA[i] if i < len(PALETA_CLARA) else "#898781",
+                 PALETA_ESCURA[i] if i < len(PALETA_ESCURA) else "#898781")
+             for i, p in enumerate(produtos)}
+
+    dados = {
+        "datas": datas,
+        "produtos": produtos,
+        "cores": {p: {"claro": c[0], "escuro": c[1]} for p, c in cores.items()},
+        "registros": [
+            {
+                "data": r["data"],
+                "produto": r["produto"],
+                "classificacao": r.get("classificacao") or "-",
+                "unidade": r.get("unidade_peso") or "KG",
+                "menor": r.get("menor"),
+                "comum": r.get("comum"),
+                "maior": r.get("maior"),
+            }
+            for r in ordenado
+        ],
+        "atualizado": datetime.now().strftime("%d/%m/%Y as %H:%M"),
+    }
+
+    os.makedirs(os.path.dirname(caminho), exist_ok=True)
+    html = TEMPLATE.replace("__DADOS__", json.dumps(dados, ensure_ascii=False))
+    with open(caminho, "w", encoding="utf-8") as f:
+        f.write(html)
+    return caminho
+
+
+TEMPLATE = r"""<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cotações de Pescado no Atacado — CEAGESP</title>
+<style>
+  :root {
+    color-scheme: light;
+    --plano:          #f9f9f7;
+    --surface-1:      #fcfcfb;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --muted:          #898781;
+    --grid:           #e1e0d9;
+    --eixo:           #c3c2b7;
+    --borda:          rgba(11,11,11,0.10);
+    --realce:         #f0efec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --plano:          #0d0d0d;
+      --surface-1:      #1a1a19;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --muted:          #898781;
+      --grid:           #2c2c2a;
+      --eixo:           #383835;
+      --borda:          rgba(255,255,255,0.10);
+      --realce:         #262624;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --plano:          #0d0d0d;
+    --surface-1:      #1a1a19;
+    --text-primary:   #ffffff;
+    --text-secondary: #c3c2b7;
+    --muted:          #898781;
+    --grid:           #2c2c2a;
+    --eixo:           #383835;
+    --borda:          rgba(255,255,255,0.10);
+    --realce:         #262624;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0 20px 64px;
+    background: var(--plano); color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 15px; line-height: 1.5;
+  }
+  .env { max-width: 1080px; margin: 0 auto; }
+
+  header { padding: 34px 0 22px; border-bottom: 2px solid var(--eixo); }
+  h1 { margin: 0 0 6px; font-size: 25px; font-weight: 650; letter-spacing: -0.01em; }
+  .sub { color: var(--text-secondary); font-size: 14px; margin: 0; }
+  .meta { margin-top: 12px; font-size: 13px; color: var(--muted); }
+  .meta a { color: inherit; }
+
+  .aviso {
+    margin: 18px 0 0; padding: 11px 14px; font-size: 13px;
+    color: var(--text-secondary); background: var(--surface-1);
+    border: 1px solid var(--borda); border-radius: 8px;
+  }
+
+  h2 {
+    margin: 38px 0 4px; font-size: 17px; font-weight: 620;
+    display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  }
+  h2 .tag { font-size: 13px; font-weight: 400; color: var(--muted); }
+  .nota { margin: 0 0 14px; font-size: 13px; color: var(--muted); }
+
+  /* ---- filtros: uma linha acima de tudo que eles filtram ---- */
+  .filtros {
+    display: flex; gap: 22px; align-items: flex-end; flex-wrap: wrap;
+    padding: 14px 16px; margin: 14px 0 22px;
+    background: var(--surface-1); border: 1px solid var(--borda); border-radius: 10px;
+  }
+  .campo { display: flex; flex-direction: column; gap: 5px; }
+  .campo > span { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  select {
+    font: inherit; font-size: 14px; padding: 6px 9px; min-width: 168px;
+    color: var(--text-primary); background: var(--plano);
+    border: 1px solid var(--eixo); border-radius: 6px;
+  }
+  .chips { display: flex; gap: 7px; flex-wrap: wrap; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 7px;
+    font: inherit; font-size: 13px; padding: 5px 11px; cursor: pointer;
+    color: var(--text-secondary); background: var(--plano);
+    border: 1px solid var(--eixo); border-radius: 999px;
+  }
+  .chip .ponto { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+  .chip[aria-pressed="true"] { color: var(--text-primary); background: var(--realce); border-color: var(--muted); }
+  .chip[aria-pressed="false"] .ponto { background: var(--muted) !important; opacity: .45; }
+  .acoes { margin-left: auto; display: flex; gap: 8px; }
+  .btn {
+    font: inherit; font-size: 13px; padding: 6px 13px; cursor: pointer;
+    color: var(--text-primary); background: var(--plano);
+    border: 1px solid var(--eixo); border-radius: 6px; text-decoration: none;
+  }
+  .btn:hover, .chip:hover { background: var(--realce); }
+
+  /* ---- cartoes do ultimo boletim ---- */
+  .cartoes { display: grid; grid-template-columns: repeat(auto-fill, minmax(216px, 1fr)); gap: 12px; }
+  .cartao {
+    padding: 14px 16px; background: var(--surface-1);
+    border: 1px solid var(--borda); border-radius: 10px;
+    border-top: 3px solid var(--cor, var(--eixo));
+  }
+  .cartao .nome { font-size: 13px; color: var(--text-secondary); margin-bottom: 3px; }
+  .cartao .valor { font-size: 27px; font-weight: 600; letter-spacing: -0.02em; }
+  .cartao .un { font-size: 13px; font-weight: 400; color: var(--muted); }
+  .cartao .faixa { font-size: 12.5px; color: var(--muted); margin-top: 5px; font-variant-numeric: tabular-nums; }
+  .cartao .delta { font-size: 12.5px; color: var(--text-secondary); margin-top: 7px; font-variant-numeric: tabular-nums; }
+
+  /* ---- grafico ---- */
+  .painel {
+    background: var(--surface-1); border: 1px solid var(--borda);
+    border-radius: 10px; padding: 16px 14px 8px; position: relative;
+  }
+  #grafico { width: 100%; display: block; }
+  .legenda { display: flex; gap: 16px; flex-wrap: wrap; padding: 4px 4px 12px; font-size: 13px; color: var(--text-secondary); }
+  .legenda span.item { display: inline-flex; align-items: center; gap: 7px; }
+  .legenda .ponto { width: 10px; height: 10px; border-radius: 50%; }
+  .dica {
+    position: absolute; pointer-events: none; opacity: 0; transition: opacity .1s;
+    background: var(--surface-1); border: 1px solid var(--eixo); border-radius: 8px;
+    padding: 9px 11px; font-size: 13px; min-width: 168px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.14); z-index: 5;
+  }
+  .dica h4 { margin: 0 0 6px; font-size: 12px; color: var(--muted); font-weight: 500; }
+  .dica .lin { display: flex; align-items: center; gap: 7px; justify-content: space-between; }
+  .dica .lin b { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .dica .esq { display: inline-flex; align-items: center; gap: 6px; color: var(--text-secondary); }
+  .dica .ponto { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+
+  /* ---- tabela ---- */
+  .rolagem { overflow-x: auto; border: 1px solid var(--borda); border-radius: 10px; background: var(--surface-1); }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { padding: 8px 13px; text-align: right; white-space: nowrap; }
+  th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+  thead th {
+    position: sticky; top: 0; background: var(--surface-1);
+    font-size: 12px; font-weight: 600; color: var(--text-secondary);
+    text-transform: uppercase; letter-spacing: .04em;
+    border-bottom: 1px solid var(--eixo);
+  }
+  tbody td { border-bottom: 1px solid var(--grid); font-variant-numeric: tabular-nums; }
+  tbody tr:last-child td { border-bottom: 0; }
+  tbody tr:hover td { background: var(--realce); }
+  td .ponto { width: 9px; height: 9px; border-radius: 50%; display: inline-block; margin-right: 8px; }
+  .vazio { padding: 26px; text-align: center; color: var(--muted); font-size: 14px; }
+
+  footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--grid); font-size: 12.5px; color: var(--muted); }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="env">
+
+<header>
+  <h1>Cotações de Pescado no Atacado</h1>
+  <p class="sub">Preços médios de venda no atacado — Entreposto Terminal de São Paulo (ETSP)</p>
+  <p class="meta">
+    Fonte dos dados: <a href="https://ceagesp.gov.br/cotacoes/" target="_blank" rel="noopener">CEAGESP — Cotações, Preços no Atacado</a>
+    · Dados atualizados em: <span id="atualizado"></span>
+  </p>
+</header>
+
+<p class="aviso">
+  Levantamento próprio, montado a partir dos boletins públicos da CEAGESP. Esta página
+  não é publicação oficial da CEAGESP nem de qualquer outro órgão. Os valores são preços
+  de venda no atacado — não são preços pagos ao produtor. A coluna <b>Comum</b> é o valor
+  mais praticado. O boletim é divulgado três vezes por semana, e nem todo produto é
+  cotado em todos os boletins.
+</p>
+
+<h2>Último boletim <span class="tag" id="rotuloUltimo"></span></h2>
+<p class="nota" id="notaUltimo"></p>
+<div class="cartoes" id="cartoes"></div>
+
+<h2>Série histórica</h2>
+<p class="nota">Os filtros abaixo valem para o gráfico e para a tabela.</p>
+
+<div class="filtros">
+  <label class="campo">
+    <span>Período</span>
+    <select id="fPeriodo">
+      <option value="0">Todo o histórico</option>
+      <option value="30">Últimos 30 dias</option>
+      <option value="90">Últimos 90 dias</option>
+      <option value="180">Últimos 180 dias</option>
+    </select>
+  </label>
+  <label class="campo">
+    <span>Escala</span>
+    <select id="fEscala">
+      <option value="reais">Preço em R$/kg</option>
+      <option value="indice">Índice (base 100 no 1º boletim)</option>
+    </select>
+  </label>
+  <div class="campo" style="flex:1 1 320px">
+    <span>Produtos</span>
+    <div class="chips" id="fProdutos"></div>
+  </div>
+  <div class="acoes">
+    <button class="btn" id="btnTodos" type="button">Marcar todos</button>
+    <a class="btn" id="btnCsv" download="cotacoes-pescado.csv">Baixar CSV</a>
+  </div>
+</div>
+
+<div class="painel">
+  <div class="legenda" id="legenda"></div>
+  <svg id="grafico" role="img" aria-label="Evolução do preço mais praticado por produto"></svg>
+  <div class="dica" id="dica"></div>
+</div>
+
+<h2 style="margin-top:34px">Tabela de dados <span class="tag" id="contagem"></span></h2>
+<div class="rolagem">
+  <table>
+    <thead>
+      <tr>
+        <th>Data</th><th>Produto</th><th>Class.</th><th>Un.</th>
+        <th>Menor</th><th>Comum</th><th>Maior</th>
+      </tr>
+    </thead>
+    <tbody id="corpo"></tbody>
+  </table>
+  <div class="vazio" id="semDados" hidden>Nenhum registro no filtro selecionado.</div>
+</div>
+
+<footer>
+  Coletado automaticamente do site da CEAGESP duas vezes por dia útil.
+  Em caso de divergência, vale sempre o
+  <a href="https://ceagesp.gov.br/cotacoes/" target="_blank" rel="noopener">boletim publicado pela CEAGESP</a>.
+</footer>
+
+</div>
+
+<script>
+const D = __DADOS__;
+
+const emData = s => { const [d,m,a] = s.split('/'); return new Date(+a, +m-1, +d); };
+const brl = v => v == null ? '—' : v.toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2});
+const escuro = () => document.documentElement.dataset.theme
+  ? document.documentElement.dataset.theme === 'dark'
+  : matchMedia('(prefers-color-scheme: dark)').matches;
+const cor = p => { const c = D.cores[p]; return !c ? '#898781' : (escuro() ? c.escuro : c.claro); };
+
+document.getElementById('atualizado').textContent = D.atualizado;
+
+let ativos = new Set(D.produtos);
+
+/* ---------- último boletim ---------- */
+const ultima = D.datas[D.datas.length - 1];
+const penultima = D.datas.length > 1 ? D.datas[D.datas.length - 2] : null;
+const doDia = d => D.registros.filter(r => r.data === d);
+
+document.getElementById('rotuloUltimo').textContent = ultima;
+document.getElementById('notaUltimo').textContent = penultima
+  ? 'Variação calculada sobre o boletim anterior, de ' + penultima + '.'
+  : 'Ainda não há boletim anterior para comparar.';
+
+document.getElementById('cartoes').innerHTML = doDia(ultima).map(r => {
+  const ant = penultima ? doDia(penultima).find(x => x.produto === r.produto) : null;
+  let delta = 'sem base de comparação';
+  if (ant && ant.comum != null && r.comum != null && ant.comum !== 0) {
+    const v = (r.comum - ant.comum) / ant.comum * 100;
+    const seta = v > 0.05 ? '▲' : (v < -0.05 ? '▼' : '■');
+    delta = seta + ' ' + (v > 0 ? '+' : '') + v.toLocaleString('pt-BR', {maximumFractionDigits:1}) + '% vs. boletim anterior';
+  }
+  return `<div class="cartao" style="--cor:${cor(r.produto)}">
+      <div class="nome">${r.produto}${r.classificacao && r.classificacao !== '-' ? ' · ' + r.classificacao : ''}</div>
+      <div class="valor">R$ ${brl(r.comum)}<span class="un"> /${(r.unidade||'KG').toLowerCase()}</span></div>
+      <div class="faixa">menor ${brl(r.menor)} · maior ${brl(r.maior)}</div>
+      <div class="delta">${delta}</div>
+    </div>`;
+}).join('');
+
+/* ---------- filtros ---------- */
+const elChips = document.getElementById('fProdutos');
+elChips.innerHTML = D.produtos.map(p =>
+  `<button class="chip" type="button" aria-pressed="true" data-p="${p}">
+     <span class="ponto" style="background:${cor(p)}"></span>${p}</button>`).join('');
+
+elChips.addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  const p = b.dataset.p;
+  if (ativos.has(p)) ativos.delete(p); else ativos.add(p);
+  b.setAttribute('aria-pressed', ativos.has(p));
+  desenhar();
+});
+
+document.getElementById('btnTodos').addEventListener('click', () => {
+  const marcarTodos = ativos.size !== D.produtos.length;
+  ativos = new Set(marcarTodos ? D.produtos : []);
+  elChips.querySelectorAll('.chip').forEach(b => b.setAttribute('aria-pressed', ativos.has(b.dataset.p)));
+  desenhar();
+});
+
+document.getElementById('fPeriodo').addEventListener('change', desenhar);
+document.getElementById('fEscala').addEventListener('change', desenhar);
+
+function filtrados() {
+  const dias = +document.getElementById('fPeriodo').value;
+  let regs = D.registros.filter(r => ativos.has(r.produto));
+  if (dias) {
+    const limite = emData(D.datas[D.datas.length-1]).getTime() - dias * 864e5;
+    regs = regs.filter(r => emData(r.data).getTime() >= limite);
+  }
+  return regs;
+}
+
+/* ---------- gráfico ---------- */
+const svg = document.getElementById('grafico');
+const dica = document.getElementById('dica');
+const NS = 'http://www.w3.org/2000/svg';
+let pontosAtuais = [];
+
+const criar = (t, at) => { const e = document.createElementNS(NS, t);
+  for (const k in at) e.setAttribute(k, at[k]); return e; };
+
+function desenhar() {
+  const regs = filtrados();
+  const indice = document.getElementById('fEscala').value === 'indice';
+
+  /* legenda: sempre presente para 2+ séries */
+  const prods = D.produtos.filter(p => regs.some(r => r.produto === p));
+  document.getElementById('legenda').innerHTML = prods.length < 2 ? '' : prods.map(p =>
+    `<span class="item"><span class="ponto" style="background:${cor(p)}"></span>${p}</span>`).join('');
+
+  const datas = D.datas.filter(d => regs.some(r => r.data === d));
+  const series = prods.map(p => {
+    const base = regs.find(r => r.produto === p && r.comum != null);
+    return { produto: p, cor: cor(p), pontos: datas.map(d => {
+      const r = regs.find(x => x.produto === p && x.data === d);
+      if (!r || r.comum == null) return null;
+      return { data: d, bruto: r.comum, y: indice && base ? r.comum / base.comum * 100 : r.comum };
+    }).filter(Boolean) };
+  }).filter(s => s.pontos.length);
+
+  /* rótulo no fim da linha só cabe em tela larga; abaixo disso a identidade
+     fica por conta da legenda, do tooltip e da tabela. */
+  const larg = svg.clientWidth || 900;
+  const rotularFim = larg >= 560;
+  const M = { t: 14, r: rotularFim ? Math.min(150, Math.max(104, larg * 0.16)) : 20,
+              b: 34, e: 54 };
+  const alt = Math.max(280, Math.min(420, larg * 0.42));
+  svg.setAttribute('viewBox', `0 0 ${larg} ${alt}`);
+  svg.setAttribute('height', alt);
+  svg.textContent = '';
+  pontosAtuais = [];
+
+  if (!series.length || datas.length === 0) {
+    svg.appendChild(criar('text', {x: larg/2, y: alt/2, 'text-anchor':'middle',
+      fill:'var(--muted)', 'font-size':14})).textContent = 'Selecione ao menos um produto.';
+    atualizarTabela(regs); return;
+  }
+
+  const vals = series.flatMap(s => s.pontos.map(p => p.y));
+  let min = Math.min(...vals), max = Math.max(...vals);
+  if (min === max) { min -= 1; max += 1; }
+  const folga = (max - min) * 0.12; min -= folga; max += folga;
+  if (!indice && min < 0) min = 0;
+
+  const px = i => M.e + (datas.length === 1 ? (larg - M.e - M.r)/2
+              : i * (larg - M.e - M.r) / (datas.length - 1));
+  const py = v => M.t + (alt - M.t - M.b) * (1 - (v - min) / (max - min));
+
+  /* grade e eixo Y: hairlines sólidas, recessivas */
+  const passo = Math.pow(10, Math.floor(Math.log10((max-min)/4))) *
+    [1,2,2.5,5,10].find(m => (max-min)/4 <= Math.pow(10, Math.floor(Math.log10((max-min)/4))) * m);
+  for (let v = Math.ceil(min/passo)*passo; v <= max; v += passo) {
+    svg.appendChild(criar('line', {x1:M.e, x2:larg-M.r, y1:py(v).toFixed(1), y2:py(v).toFixed(1),
+      stroke:'var(--grid)', 'stroke-width':1}));
+    const t = criar('text', {x:M.e-9, y:(py(v)+4).toFixed(1), 'text-anchor':'end',
+      fill:'var(--muted)', 'font-size':11.5, 'font-variant-numeric':'tabular-nums'});
+    t.textContent = indice ? Math.round(v) : v.toLocaleString('pt-BR', {maximumFractionDigits:0});
+    svg.appendChild(t);
+  }
+
+  /* eixo X */
+  svg.appendChild(criar('line', {x1:M.e, x2:larg-M.r, y1:alt-M.b, y2:alt-M.b,
+    stroke:'var(--eixo)', 'stroke-width':1}));
+  const salto = Math.ceil(datas.length / Math.max(2, Math.floor((larg-M.e-M.r)/78)));
+  datas.forEach((d, i) => {
+    if (i % salto && i !== datas.length-1) return;
+    const t = criar('text', {x:px(i).toFixed(1), y:alt-M.b+18, 'text-anchor':'middle',
+      fill:'var(--muted)', 'font-size':11.5, 'font-variant-numeric':'tabular-nums'});
+    t.textContent = d.slice(0,5);
+    svg.appendChild(t);
+  });
+
+  /* linhas 2px + marcadores com anel da superfície */
+  const fimLinhas = [];
+  series.forEach(s => {
+    const pts = s.pontos.map(p => [px(datas.indexOf(p.data)), py(p.y)]);
+    svg.appendChild(criar('path', {
+      d: pts.map((p,i) => (i?'L':'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' '),
+      fill:'none', stroke:s.cor, 'stroke-width':2,
+      'stroke-linejoin':'round', 'stroke-linecap':'round'}));
+    pts.forEach((p, i) => {
+      svg.appendChild(criar('circle', {cx:p[0].toFixed(1), cy:p[1].toFixed(1), r:4,
+        fill:s.cor, stroke:'var(--surface-1)', 'stroke-width':2}));
+      pontosAtuais.push({x:p[0], y:p[1], data:s.pontos[i].data});
+    });
+    const fim = pts[pts.length-1];
+    fimLinhas.push({texto: s.produto.length > 17 ? s.produto.slice(0,16) + '…' : s.produto,
+                    x: fim[0], yLinha: fim[1], y: fim[1] + 4});
+  });
+
+  /* rótulos diretos no fim das linhas: texto em tinta (a cor fica no marcador),
+     afastados verticalmente para nunca se sobrepor. */
+  const SEP = 13;
+  if (!rotularFim) fimLinhas.length = 0;
+  fimLinhas.sort((a, b) => a.y - b.y);
+  const espalhar = () => {
+    for (let i = 1; i < fimLinhas.length; i++)
+      if (fimLinhas[i].y - fimLinhas[i-1].y < SEP) fimLinhas[i].y = fimLinhas[i-1].y + SEP;
+  };
+  espalhar();
+  const sobra = fimLinhas.length ? fimLinhas[fimLinhas.length-1].y - (alt - M.b) : 0;
+  if (sobra > 0) {
+    fimLinhas.forEach(r => r.y -= sobra);
+    if (fimLinhas[0].y < M.t + 8) { fimLinhas[0].y = M.t + 8; espalhar(); }
+  }
+  fimLinhas.forEach(r => {
+    /* ligação discreta quando o rótulo precisou sair da altura da linha */
+    if (Math.abs(r.y - 4 - r.yLinha) > 2)
+      svg.appendChild(criar('path', {
+        d: `M${(r.x+5).toFixed(1)} ${r.yLinha.toFixed(1)} L${(r.x+9).toFixed(1)} ${(r.y-4).toFixed(1)}`,
+        stroke:'var(--eixo)', 'stroke-width':1, fill:'none'}));
+    const rot = criar('text', {x:(r.x+11).toFixed(1), y:r.y.toFixed(1),
+      fill:'var(--text-secondary)', 'font-size':11.5});
+    rot.textContent = r.texto;
+    svg.appendChild(rot);
+  });
+
+  /* camada de hover: alvo largo por data, tooltip com todas as séries */
+  const faixa = (larg - M.e - M.r) / Math.max(1, datas.length - 1);
+  datas.forEach((d, i) => {
+    const alvo = criar('rect', {x:(px(i)-faixa/2).toFixed(1), y:M.t,
+      width:Math.max(24, faixa).toFixed(1), height:alt-M.t-M.b,
+      fill:'transparent', style:'cursor:crosshair'});
+    alvo.addEventListener('mouseenter', () => mostrarDica(d, px(i), series, indice));
+    alvo.addEventListener('mouseleave', esconderDica);
+    svg.appendChild(alvo);
+  });
+
+  atualizarTabela(regs);
+}
+
+let cruz = null;
+function mostrarDica(data, x, series, indice) {
+  const alt = +svg.getAttribute('viewBox').split(' ')[3];
+  if (cruz) cruz.remove();
+  cruz = criar('line', {x1:x.toFixed(1), x2:x.toFixed(1), y1:14, y2:alt-34,
+    stroke:'var(--eixo)', 'stroke-width':1});
+  svg.insertBefore(cruz, svg.firstChild);
+
+  const linhas = series.map(s => {
+    const p = s.pontos.find(q => q.data === data);
+    if (!p) return '';
+    return `<div class="lin"><span class="esq"><span class="ponto" style="background:${s.cor}"></span>${s.produto}</span>
+      <b>${indice ? Math.round(p.y) : 'R$ ' + brl(p.bruto)}</b></div>`;
+  }).join('');
+  dica.innerHTML = `<h4>${data}</h4>${linhas}`;
+  dica.style.opacity = 1;
+
+  const cx = svg.getBoundingClientRect().width / +svg.getAttribute('viewBox').split(' ')[2] * x;
+  const esq = Math.min(Math.max(cx - dica.offsetWidth/2, 8),
+                       svg.getBoundingClientRect().width - dica.offsetWidth - 8);
+  dica.style.left = (esq + 14) + 'px';
+  dica.style.top = '52px';
+}
+function esconderDica() { dica.style.opacity = 0; if (cruz) { cruz.remove(); cruz = null; } }
+
+/* ---------- tabela e CSV ---------- */
+function atualizarTabela(regs) {
+  const linhas = [...regs].sort((a,b) =>
+    emData(b.data) - emData(a.data) || a.produto.localeCompare(b.produto, 'pt-BR'));
+
+  document.getElementById('contagem').textContent =
+    linhas.length + (linhas.length === 1 ? ' registro' : ' registros');
+  document.getElementById('semDados').hidden = linhas.length > 0;
+  document.getElementById('corpo').innerHTML = linhas.map(r => `<tr>
+      <td>${r.data}</td>
+      <td><span class="ponto" style="background:${cor(r.produto)}"></span>${r.produto}</td>
+      <td>${r.classificacao}</td><td>${r.unidade}</td>
+      <td>${brl(r.menor)}</td><td><b>${brl(r.comum)}</b></td><td>${brl(r.maior)}</td>
+    </tr>`).join('');
+
+  const csv = ['data;produto;classificacao;unidade;menor;comum;maior']
+    .concat(linhas.map(r => [r.data, r.produto, r.classificacao, r.unidade,
+      brl(r.menor), brl(r.comum), brl(r.maior)].join(';'))).join('\r\n');
+  document.getElementById('btnCsv').href =
+    'data:text/csv;charset=utf-8,' + encodeURIComponent('﻿' + csv);
+}
+
+addEventListener('resize', desenhar);
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+  elChips.querySelectorAll('.chip').forEach(b =>
+    b.querySelector('.ponto').style.background = cor(b.dataset.p));
+  desenhar();
+});
+desenhar();
+</script>
+</body>
+</html>
+"""
+
+
+if __name__ == "__main__":
+    import csv
+
+    caminho_csv = os.path.join(BASE, "dados", "historico.csv")
+    with open(caminho_csv, encoding="utf-8-sig", newline="") as f:
+        registros = list(csv.DictReader(f, delimiter=";"))
+    for r in registros:
+        for c in ("menor", "comum", "maior", "quilo"):
+            v = (r.get(c) or "").replace(".", "").replace(",", ".")
+            r[c] = float(v) if v else None
+    print("Pagina gerada em:", gerar(registros))
