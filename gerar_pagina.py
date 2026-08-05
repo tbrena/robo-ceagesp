@@ -383,7 +383,6 @@ function filtrados() {
 const svg = document.getElementById('grafico');
 const dica = document.getElementById('dica');
 const NS = 'http://www.w3.org/2000/svg';
-let pontosAtuais = [];
 
 const criar = (t, at) => { const e = document.createElementNS(NS, t);
   for (const k in at) e.setAttribute(k, at[k]); return e; };
@@ -417,7 +416,6 @@ function desenhar() {
   svg.setAttribute('viewBox', `0 0 ${larg} ${alt}`);
   svg.setAttribute('height', alt);
   svg.textContent = '';
-  pontosAtuais = [];
 
   if (!series.length || datas.length === 0) {
     svg.appendChild(criar('text', {x: larg/2, y: alt/2, 'text-anchor':'middle',
@@ -451,15 +449,24 @@ function desenhar() {
   svg.appendChild(criar('line', {x1:M.e, x2:larg-M.r, y1:alt-M.b, y2:alt-M.b,
     stroke:'var(--eixo)', 'stroke-width':1}));
   const salto = Math.ceil(datas.length / Math.max(2, Math.floor((larg-M.e-M.r)/78)));
-  datas.forEach((d, i) => {
-    if (i % salto && i !== datas.length-1) return;
+  const marcas = [];
+  for (let i = 0; i < datas.length; i += salto) marcas.push(i);
+  const ultimo = datas.length - 1;
+  if (marcas[marcas.length-1] !== ultimo) {
+    /* a última data sempre aparece; se a marca anterior ficaria colada nela, sai */
+    if (ultimo - marcas[marcas.length-1] < salto * 0.6) marcas.pop();
+    marcas.push(ultimo);
+  }
+  marcas.forEach(i => {
     const t = criar('text', {x:px(i).toFixed(1), y:alt-M.b+18, 'text-anchor':'middle',
       fill:'var(--muted)', 'font-size':11.5, 'font-variant-numeric':'tabular-nums'});
-    t.textContent = d.slice(0,5);
+    t.textContent = datas[i].slice(0,5);
     svg.appendChild(t);
   });
 
   /* linhas 2px + marcadores com anel da superfície */
+  const faixa = (larg - M.e - M.r) / Math.max(1, datas.length - 1);
+  const marcadores = faixa >= 14;
   const fimLinhas = [];
   series.forEach(s => {
     const pts = s.pontos.map(p => [px(datas.indexOf(p.data)), py(p.y)]);
@@ -467,10 +474,12 @@ function desenhar() {
       d: pts.map((p,i) => (i?'L':'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' '),
       fill:'none', stroke:s.cor, 'stroke-width':2,
       'stroke-linejoin':'round', 'stroke-linecap':'round'}));
+    /* com muitos boletins os marcadores se encostam: aí só a linha fica,
+       e o último ponto permanece para ancorar o rótulo. */
     pts.forEach((p, i) => {
+      if (!marcadores && i !== pts.length - 1) return;
       svg.appendChild(criar('circle', {cx:p[0].toFixed(1), cy:p[1].toFixed(1), r:4,
         fill:s.cor, stroke:'var(--surface-1)', 'stroke-width':2}));
-      pontosAtuais.push({x:p[0], y:p[1], data:s.pontos[i].data});
     });
     const fim = pts[pts.length-1];
     fimLinhas.push({texto: s.produto.length > 17 ? s.produto.slice(0,16) + '…' : s.produto,
@@ -504,16 +513,18 @@ function desenhar() {
     svg.appendChild(rot);
   });
 
-  /* camada de hover: alvo largo por data, tooltip com todas as séries */
-  const faixa = (larg - M.e - M.r) / Math.max(1, datas.length - 1);
-  datas.forEach((d, i) => {
-    const alvo = criar('rect', {x:(px(i)-faixa/2).toFixed(1), y:M.t,
-      width:Math.max(24, faixa).toFixed(1), height:alt-M.t-M.b,
-      fill:'transparent', style:'cursor:crosshair'});
-    alvo.addEventListener('mouseenter', () => mostrarDica(d, px(i), series, indice));
-    alvo.addEventListener('mouseleave', esconderDica);
-    svg.appendChild(alvo);
+  /* camada de hover única, por ponto mais próximo: com muitos boletins um alvo
+     por data ficaria menor que o mínimo de toque (ou se sobreporia ao vizinho). */
+  const captura = criar('rect', {x:M.e, y:M.t, width:(larg-M.e-M.r).toFixed(1),
+    height:(alt-M.t-M.b).toFixed(1), fill:'transparent', style:'cursor:crosshair'});
+  captura.addEventListener('mousemove', ev => {
+    const cx = svg.getBoundingClientRect();
+    const mx = (ev.clientX - cx.left) * (larg / cx.width);
+    const i = Math.max(0, Math.min(datas.length - 1, Math.round((mx - M.e) / faixa)));
+    mostrarDica(datas[i], px(i), series, indice);
   });
+  captura.addEventListener('mouseleave', esconderDica);
+  svg.appendChild(captura);
 
   atualizarTabela(regs);
 }

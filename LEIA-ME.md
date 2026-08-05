@@ -52,6 +52,36 @@ Colunas: `data`, `categoria`, `produto`, `classificacao`, `unidade_peso`, `menor
 
 Log de execução em `logs/robo.log`.
 
+## Histórico importado de planilha
+
+O histórico começa em **07/01/2026**, importado de uma planilha Excel própria; a coleta
+automática assumiu a partir de **20/07/2026**. Para importar outra planilha:
+
+```bash
+python importar_excel.py "caminho\da\planilha.xlsx"
+```
+
+Ela precisa ter uma linha de cabeçalho com `Data | Produto | Clas. | Uni/Peso | Menor |
+Comum | Maior` (a ordem não importa). Opções: `--aba NOME` escolhe a aba, `--todos`
+importa todos os produtos em vez de só os monitorados, e `--simular` mostra o resultado
+sem gravar nada — vale sempre rodar antes.
+
+Em conflito (mesma data, produto e classificação), **o registro do robô prevalece**, já
+que ele lê direto do site da CEAGESP. As divergências são listadas no log para conferência.
+
+### Ressalvas sobre os dados importados
+
+- Na conferência da primeira importação, 20 dos 23 valores sobrepostos bateram exatamente
+  com o que o robô coletou. Os 3 restantes estavam na linha de **27/07/2026** da planilha,
+  com valores que o site publica para **29/07/2026** — inclusive com a mesma cobertura de
+  produtos daquele boletim. Ou seja, aquele bloco da planilha estava com a data trocada.
+  Prevaleceram os valores do robô, e o 29/07 correto entrou pela coleta automática.
+- A planilha não tinha os boletins de **10/07/2026** e 29/07/2026. O de 10/07 continua
+  ausente: quando percebemos, o site já não o exibia mais (ele mantém cerca de 7 boletins).
+- Os dados anteriores a 20/07/2026 **não puderam ser conferidos contra o site**, pelo mesmo
+  motivo. Dado o erro encontrado em 27/07, é possível que existam outros pontos com data
+  trocada nesse trecho.
+
 ## Uso manual
 
 ```bash
