@@ -1,0 +1,56 @@
+name: Coleta CEAGESP - Pescado
+
+on:
+  schedule:
+    # Horarios em UTC. Brasilia = UTC-3 o ano todo (nao ha mais horario de verao).
+    - cron: '0 12 * * 1-5'   # 09:00 de Brasilia, seg a sex
+    - cron: '0 19 * * 1-5'   # 16:00 de Brasilia, seg a sex
+  workflow_dispatch:          # permite disparar manualmente pela aba Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coleta-ceagesp
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Sao_Paulo
+
+    steps:
+      - name: Baixar o repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar o Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Coletar cotacoes
+        run: python robo_ceagesp.py
+
+      - name: Disponibilizar planilha para download
+        uses: actions/upload-artifact@v4
+        with:
+          name: cotacoes-pescado
+          path: dados/
+          if-no-files-found: warn
+          retention-days: 90
+
+      - name: Guardar os dados no repositorio
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados
+          if git diff --staged --quiet; then
+            echo "Nenhum boletim novo - nada a gravar."
+          else
+            git commit -m "Cotacoes CEAGESP - coleta de $(date +'%d/%m/%Y %H:%M')"
+            git push
+          fi
