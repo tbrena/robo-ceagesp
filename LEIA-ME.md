@@ -3,6 +3,9 @@
 Coleta os preços de atacado dos pescados de interesse em <https://ceagesp.gov.br/cotacoes/>
 (categoria **PESCADOS**, Entreposto da Capital) e acumula o histórico.
 
+📊 **Página de consulta: <https://tbrena.github.io/robo-ceagesp/>** — atualizada
+automaticamente a cada coleta.
+
 ## Produtos monitorados
 
 FILE DE TILAPIA · PANGASIUS · PINTADO · TAMBAQUI · TILÁPIA · TRUTA
@@ -36,6 +39,12 @@ linha para aquele produto.
 | `historico.csv` | histórico acumulado, `;` como separador, UTF-8 com BOM (abre direto no Excel) |
 | `boletim_AAAA-MM-DD.csv` | cada boletim coletado, individualmente |
 | `cotacoes_pescado.xlsx` | planilha com abas **Histórico** e **Último boletim**, já formatada |
+
+A pasta `docs` guarda a página de consulta (`index.html`), regerada a cada coleta nova e
+publicada em <https://tbrena.github.io/robo-ceagesp/>. Ela traz o último boletim com a
+variação percentual sobre o anterior, gráfico da série (em R$/kg ou indexado a 100),
+filtros por produto e período, tabela completa e download em CSV. Para reconstruir a
+página sem consultar o site: `python gerar_pagina.py`.
 
 Colunas: `data`, `categoria`, `produto`, `classificacao`, `unidade_peso`, `menor`, `comum`,
 `maior`, `quilo`, `coletado_em`. **Menor / Comum / Maior** são os preços em R$ —
