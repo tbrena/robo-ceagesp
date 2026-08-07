@@ -149,6 +149,14 @@ Pontos a saber:
   agendamento e avisa por e-mail; basta reativar com um clique na aba Actions.
 - Se um dia a CEAGESP bloquear as requisições vindas de datacenter, a execução falha e o
   GitHub envia e-mail. Nesse caso, o plano B é o agendamento local descrito abaixo.
+- O site da CEAGESP às vezes não responde. O robô tenta 3 vezes antes de desistir e falhar
+  com e-mail. Não há perda: a coleta seguinte recupera o boletim, já que o site mantém
+  cerca de 7 deles.
+- A publicação no GitHub Pages é um passo separado, que já falhou por conta própria
+  (fila travada em 06/08/2026, deixando o site com dados velhos enquanto a coleta constava
+  como bem-sucedida). Por isso o workflow agora confere se o Pages publicou o commit da
+  coleta; se não publicar, ele pede um novo build e, persistindo, **falha de propósito**
+  para que o e-mail de erro chegue em vez do problema passar despercebido.
 
 ## Alternativa: execução automática no Windows
 

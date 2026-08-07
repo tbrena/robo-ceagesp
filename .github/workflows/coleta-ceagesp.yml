@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 concurrency:
   group: coleta-ceagesp
@@ -51,13 +52,49 @@ jobs:
           retention-days: 90
 
       - name: Guardar os dados no repositorio
+        id: gravar
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dados docs
           if git diff --staged --quiet; then
             echo "Nenhum boletim novo - nada a gravar."
+            echo "publicou=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Cotacoes CEAGESP - coleta de $(date +'%d/%m/%Y %H:%M')"
             git push
+            echo "publicou=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # O push dispara sozinho o build do GitHub Pages, mas ele pode falhar por
+      # conta propria: em 06/08/2026 ficou preso na fila e expirou, deixando o
+      # site com dados velhos enquanto esta coleta constava como bem-sucedida.
+      # Aqui esse silencio vira falha visivel (e o GitHub avisa por e-mail).
+      - name: Confirmar que o site publicou
+        if: steps.gravar.outputs.publicou == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          sha=$(git rev-parse HEAD)
+          aguardar() {
+            for _ in $(seq 1 40); do
+              linha=$(gh api "repos/$GITHUB_REPOSITORY/pages/builds/latest" \
+                        --jq '.status + " " + .commit' 2>/dev/null || echo "? ?")
+              estado=${linha%% *}
+              commit=${linha##* }
+              if [ "$commit" = "$sha" ]; then
+                case "$estado" in
+                  built)   echo "Pages publicado a partir de ${sha:0:7}."; return 0 ;;
+                  errored) echo "Build do Pages falhou para ${sha:0:7}."; return 1 ;;
+                esac
+              fi
+              sleep 15
+            done
+            echo "Build do Pages nao concluiu em 10 minutos."
+            return 1
+          }
+          sleep 20
+          if aguardar; then exit 0; fi
+          echo "Solicitando novo build do Pages..."
+          gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds" >/dev/null
+          aguardar
