@@ -4,61 +4,61 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-08-06T10:51:45-03:00",
- "data": "2026-08-05",
- "data_anterior": "2026-08-03",
+ "atualizado_em": "2026-08-09T19:36:30-03:00",
+ "data": "2026-08-07",
+ "data_anterior": "2026-08-05",
  "total": 5,
  "dados": [
   {
-   "data": "2026-08-05",
+   "data": "2026-08-07",
    "produto": "FILE DE TILAPIA",
    "produto_id": "file-de-tilapia",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 42.27,
-   "comum": 42.84,
-   "maior": 43.41,
-   "variacao_percentual": -1.31,
-   "comum_anterior": 43.41
+   "menor": 42.61,
+   "comum": 43.48,
+   "maior": 44.36,
+   "variacao_percentual": 1.49,
+   "comum_anterior": 42.84
   },
   {
-   "data": "2026-08-05",
+   "data": "2026-08-07",
    "produto": "PINTADO",
    "produto_id": "pintado",
    "classificacao": "-",
    "unidade": "KG",
    "menor": 25.0,
-   "comum": 25.5,
-   "maior": 26.0,
-   "variacao_percentual": -1.92,
-   "comum_anterior": 26.0
+   "comum": 26.0,
+   "maior": 27.0,
+   "variacao_percentual": 1.96,
+   "comum_anterior": 25.5
   },
   {
-   "data": "2026-08-05",
+   "data": "2026-08-07",
    "produto": "TAMBAQUI",
    "produto_id": "tambaqui",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 12.0,
-   "comum": 12.5,
-   "maior": 13.0,
-   "variacao_percentual": -6.02,
-   "comum_anterior": 13.3
+   "menor": 13.5,
+   "comum": 13.9,
+   "maior": 14.25,
+   "variacao_percentual": 11.2,
+   "comum_anterior": 12.5
   },
   {
-   "data": "2026-08-05",
+   "data": "2026-08-07",
    "produto": "TILÁPIA",
    "produto_id": "tilapia",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 11.93,
-   "comum": 12.22,
-   "maior": 12.45,
-   "variacao_percentual": 0.91,
-   "comum_anterior": 12.11
+   "menor": 12.0,
+   "comum": 12.24,
+   "maior": 12.43,
+   "variacao_percentual": 0.16,
+   "comum_anterior": 12.22
   },
   {
-   "data": "2026-08-05",
+   "data": "2026-08-07",
    "produto": "TRUTA",
    "produto_id": "truta",
    "classificacao": "-",
@@ -66,8 +66,8 @@
    "menor": 37.5,
    "comum": 38.25,
    "maior": 39.0,
-   "variacao_percentual": -0.65,
-   "comum_anterior": 38.5
+   "variacao_percentual": 0.0,
+   "comum_anterior": 38.25
   }
  ]
 }
