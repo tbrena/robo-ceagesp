@@ -31,8 +31,9 @@ if (-not (Test-Path $bat)) { throw "Nao encontrei $bat" }
 foreach ($h in $Horarios) {
     $nome = "$prefixo - $h"
     $acao = New-ScheduledTaskAction -Execute $bat -WorkingDirectory $PSScriptRoot
-    $gatilho = New-ScheduledTaskTrigger -Weekly -At $h `
-        -DaysOfWeek Monday, Tuesday, Wednesday, Thursday, Friday
+    # Todo dia, inclusive fim de semana: a CEAGESP so disponibiliza o boletim no
+    # dia seguinte, entao o de sexta-feira aparece no sabado.
+    $gatilho = New-ScheduledTaskTrigger -Daily -At $h
     # StartWhenAvailable: se o PC estiver desligado no horario, roda assim que ligar.
     $config = New-ScheduledTaskSettingsSet -StartWhenAvailable `
         -ExecutionTimeLimit (New-TimeSpan -Minutes 30) -MultipleInstances IgnoreNew

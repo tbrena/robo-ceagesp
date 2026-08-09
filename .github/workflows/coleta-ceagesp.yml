@@ -3,8 +3,14 @@ name: Coleta CEAGESP - Pescado
 on:
   schedule:
     # Horarios em UTC. Brasilia = UTC-3 o ano todo (nao ha mais horario de verao).
-    - cron: '0 12 * * 1-5'   # 09:00 de Brasilia, seg a sex
-    - cron: '0 19 * * 1-5'   # 16:00 de Brasilia, seg a sex
+    #
+    # Roda TODO DIA, inclusive fim de semana. A CEAGESP publica o boletim as
+    # segundas, quartas e sextas, mas so o disponibiliza no site no dia seguinte
+    # ("escolha a data anterior ao dia de hoje") - ou seja, o boletim de sexta so
+    # aparece no sabado. Restringir a dias uteis deixava esse boletim parado ate
+    # segunda-feira. Nos dias sem novidade a execucao termina em segundos.
+    - cron: '0 12 * * *'   # 09:00 de Brasilia
+    - cron: '0 19 * * *'   # 16:00 de Brasilia
   workflow_dispatch:          # permite disparar manualmente pela aba Actions
     inputs:
       parametros:

@@ -132,7 +132,10 @@ python robo_ceagesp.py
 O robô roda nos servidores do GitHub, **independente do seu PC estar ligado**.
 A configuração está em `.github/workflows/coleta-ceagesp.yml`.
 
-- Roda **09:00 e 16:00 (horário de Brasília), de segunda a sexta**.
+- Roda **09:00 e 16:00 (horário de Brasília), todos os dias**, inclusive fim de semana.
+  Parece exagero para um boletim publicado 3x por semana, mas não é: a CEAGESP só
+  disponibiliza o boletim no site **no dia seguinte** ao da apuração, então o de sexta-feira
+  aparece no sábado. Rodar só em dias úteis deixava esse boletim parado até segunda.
 - Após cada coleta, os arquivos da pasta `dados` são atualizados no próprio repositório —
   é de lá que você baixa o `cotacoes_pescado.xlsx`.
 - A planilha também fica anexada a cada execução, na aba **Actions**, por 90 dias.
@@ -167,7 +170,7 @@ projeto e rode (não precisa de administrador — as tarefas ficam no seu usuár
 .\agendar_windows.ps1
 ```
 
-Isso cria duas tarefas, às 09:00 e às 16:00, de segunda a sexta, apontando para
+Isso cria duas tarefas diárias, às 09:00 e às 16:00, apontando para
 `executar_robo.bat`. Se o PC estiver desligado no horário, a tarefa roda assim que ele for
 ligado. Para outro horário, `.\agendar_windows.ps1 -Horarios 07:30`; para desfazer,
 `.\agendar_windows.ps1 -Remover`.
