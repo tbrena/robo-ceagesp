@@ -4,25 +4,25 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-08-09T19:36:30-03:00",
- "data": "2026-08-07",
- "data_anterior": "2026-08-05",
+ "atualizado_em": "2026-08-11T09:46:47-03:00",
+ "data": "2026-08-10",
+ "data_anterior": "2026-08-07",
  "total": 5,
  "dados": [
   {
-   "data": "2026-08-07",
+   "data": "2026-08-10",
    "produto": "FILE DE TILAPIA",
    "produto_id": "file-de-tilapia",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 42.61,
-   "comum": 43.48,
-   "maior": 44.36,
-   "variacao_percentual": 1.49,
-   "comum_anterior": 42.84
+   "menor": 42.75,
+   "comum": 43.65,
+   "maior": 44.58,
+   "variacao_percentual": 0.39,
+   "comum_anterior": 43.48
   },
   {
-   "data": "2026-08-07",
+   "data": "2026-08-10",
    "produto": "PINTADO",
    "produto_id": "pintado",
    "classificacao": "-",
@@ -30,11 +30,11 @@
    "menor": 25.0,
    "comum": 26.0,
    "maior": 27.0,
-   "variacao_percentual": 1.96,
-   "comum_anterior": 25.5
+   "variacao_percentual": 0.0,
+   "comum_anterior": 26.0
   },
   {
-   "data": "2026-08-07",
+   "data": "2026-08-10",
    "produto": "TAMBAQUI",
    "produto_id": "tambaqui",
    "classificacao": "-",
@@ -42,11 +42,11 @@
    "menor": 13.5,
    "comum": 13.9,
    "maior": 14.25,
-   "variacao_percentual": 11.2,
-   "comum_anterior": 12.5
+   "variacao_percentual": 0.0,
+   "comum_anterior": 13.9
   },
   {
-   "data": "2026-08-07",
+   "data": "2026-08-10",
    "produto": "TILÁPIA",
    "produto_id": "tilapia",
    "classificacao": "-",
@@ -54,11 +54,11 @@
    "menor": 12.0,
    "comum": 12.24,
    "maior": 12.43,
-   "variacao_percentual": 0.16,
-   "comum_anterior": 12.22
+   "variacao_percentual": 0.0,
+   "comum_anterior": 12.24
   },
   {
-   "data": "2026-08-07",
+   "data": "2026-08-10",
    "produto": "TRUTA",
    "produto_id": "truta",
    "classificacao": "-",
