@@ -8,9 +8,14 @@ on:
     # segundas, quartas e sextas, mas so o disponibiliza no site no dia seguinte
     # ("escolha a data anterior ao dia de hoje") - ou seja, o boletim de sexta so
     # aparece no sabado. Restringir a dias uteis deixava esse boletim parado ate
-    # segunda-feira. Nos dias sem novidade a execucao termina em segundos.
-    - cron: '0 12 * * *'   # 09:00 de Brasilia
-    - cron: '0 19 * * *'   # 16:00 de Brasilia
+    # segunda-feira.
+    #
+    # E o horario em que o boletim entra no site varia: o de quarta 12/08 so
+    # apareceu depois das 16:56 e ja estava la na madrugada de 13/08. Com apenas
+    # duas execucoes por dia (09:00 e 16:00) o site ficava ate ~17h atrasado.
+    # Por isso a checagem e a cada 3 horas - quando nao ha novidade a execucao
+    # termina em segundos, entao o custo extra e desprezivel.
+    - cron: '0 */3 * * *'  # a cada 3 horas (00:00, 03:00, ... 21:00 de Brasilia)
   workflow_dispatch:          # permite disparar manualmente pela aba Actions
     inputs:
       parametros:
