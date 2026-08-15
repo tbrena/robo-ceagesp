@@ -4,8 +4,8 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-08-13T01:41:16-03:00",
- "total": 352,
+ "atualizado_em": "2026-08-15T09:22:29-03:00",
+ "total": 356,
  "dados": [
   {
    "data": "2026-01-07",
@@ -3519,6 +3519,46 @@
   },
   {
    "data": "2026-08-12",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.71,
+   "comum": 12.94,
+   "maior": 13.2
+  },
+  {
+   "data": "2026-08-14",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.3,
+   "comum": 42.02,
+   "maior": 42.74
+  },
+  {
+   "data": "2026-08-14",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 27.0,
+   "comum": 27.5,
+   "maior": 28.0
+  },
+  {
+   "data": "2026-08-14",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.5,
+   "comum": 12.7,
+   "maior": 13.0
+  },
+  {
+   "data": "2026-08-14",
    "produto": "TILÁPIA",
    "produto_id": "tilapia",
    "classificacao": "-",
