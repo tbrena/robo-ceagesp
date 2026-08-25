@@ -4,37 +4,25 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-08-22T09:24:00-03:00",
- "data": "2026-08-21",
- "data_anterior": "2026-08-19",
- "total": 5,
+ "atualizado_em": "2026-08-25T09:33:52-03:00",
+ "data": "2026-08-24",
+ "data_anterior": "2026-08-21",
+ "total": 4,
  "dados": [
   {
-   "data": "2026-08-21",
+   "data": "2026-08-24",
    "produto": "FILE DE TILAPIA",
    "produto_id": "file-de-tilapia",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 41.64,
-   "comum": 42.12,
-   "maior": 42.54,
-   "variacao_percentual": -1.36,
-   "comum_anterior": 42.7
+   "menor": 41.16,
+   "comum": 41.7,
+   "maior": 42.25,
+   "variacao_percentual": -1.0,
+   "comum_anterior": 42.12
   },
   {
-   "data": "2026-08-21",
-   "produto": "PINTADO",
-   "produto_id": "pintado",
-   "classificacao": "-",
-   "unidade": "KG",
-   "menor": 25.34,
-   "comum": 26.0,
-   "maior": 26.66,
-   "variacao_percentual": null,
-   "comum_anterior": null
-  },
-  {
-   "data": "2026-08-21",
+   "data": "2026-08-24",
    "produto": "TAMBAQUI",
    "produto_id": "tambaqui",
    "classificacao": "-",
@@ -42,32 +30,32 @@
    "menor": 13.0,
    "comum": 14.0,
    "maior": 15.0,
-   "variacao_percentual": null,
-   "comum_anterior": null
+   "variacao_percentual": 0.0,
+   "comum_anterior": 14.0
   },
   {
-   "data": "2026-08-21",
+   "data": "2026-08-24",
    "produto": "TILÁPIA",
    "produto_id": "tilapia",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 11.57,
-   "comum": 11.98,
-   "maior": 12.42,
-   "variacao_percentual": -3.62,
-   "comum_anterior": 12.43
+   "menor": 12.0,
+   "comum": 12.32,
+   "maior": 12.56,
+   "variacao_percentual": 2.84,
+   "comum_anterior": 11.98
   },
   {
-   "data": "2026-08-21",
+   "data": "2026-08-24",
    "produto": "TRUTA",
    "produto_id": "truta",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 37.5,
-   "comum": 38.25,
-   "maior": 39.0,
-   "variacao_percentual": -1.92,
-   "comum_anterior": 39.0
+   "menor": 38.0,
+   "comum": 39.0,
+   "maior": 40.0,
+   "variacao_percentual": 1.96,
+   "comum_anterior": 38.25
   }
  ]
 }

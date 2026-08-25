@@ -4,8 +4,8 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-08-22T09:24:00-03:00",
- "total": 370,
+ "atualizado_em": "2026-08-25T09:33:52-03:00",
+ "total": 374,
  "dados": [
   {
    "data": "2026-01-07",
@@ -3706,6 +3706,46 @@
    "menor": 37.5,
    "comum": 38.25,
    "maior": 39.0
+  },
+  {
+   "data": "2026-08-24",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.16,
+   "comum": 41.7,
+   "maior": 42.25
+  },
+  {
+   "data": "2026-08-24",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.0,
+   "comum": 14.0,
+   "maior": 15.0
+  },
+  {
+   "data": "2026-08-24",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.0,
+   "comum": 12.32,
+   "maior": 12.56
+  },
+  {
+   "data": "2026-08-24",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.0,
+   "comum": 39.0,
+   "maior": 40.0
   }
  ]
 }

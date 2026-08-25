@@ -4,10 +4,10 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-08-22T09:24:00-03:00",
+ "atualizado_em": "2026-08-25T09:33:52-03:00",
  "produto": "FILE DE TILAPIA",
  "produto_id": "file-de-tilapia",
- "total": 82,
+ "total": 83,
  "dados": [
   {
    "data": "2026-01-07",
@@ -664,6 +664,14 @@
    "menor": 41.64,
    "comum": 42.12,
    "maior": 42.54
+  },
+  {
+   "data": "2026-08-24",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.16,
+   "comum": 41.7,
+   "maior": 42.25
   }
  ]
 }
