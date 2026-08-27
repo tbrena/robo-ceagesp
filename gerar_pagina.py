@@ -123,6 +123,8 @@ TEMPLATE = r"""<!DOCTYPE html>
   .sub { color: var(--text-secondary); font-size: 14px; margin: 0; }
   .meta { margin-top: 12px; font-size: 13px; color: var(--muted); }
   .meta a { color: inherit; }
+  .meta.coleta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  #btnColeta[disabled] { opacity: .55; cursor: wait; }
 
   .aviso {
     margin: 18px 0 0; padding: 11px 14px; font-size: 13px;
@@ -242,6 +244,10 @@ TEMPLATE = r"""<!DOCTYPE html>
     Fonte dos dados: <a href="https://ceagesp.gov.br/cotacoes/" target="_blank" rel="noopener">CEAGESP — Cotações, Preços no Atacado</a>
     · Dados atualizados em: <span id="atualizado"></span>
   </p>
+  <p class="meta coleta">
+    <button class="btn" id="btnColeta" type="button">Buscar boletim agora</button>
+    <span id="stColeta" role="status"></span>
+  </p>
 </header>
 
 <p class="aviso">
@@ -333,7 +339,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 </div>
 
 <footer>
-  Coletado automaticamente do site da CEAGESP duas vezes por dia útil.
+  Coletado automaticamente do site da CEAGESP a cada 3 horas, todos os dias.
   Em caso de divergência, vale sempre o
   <a href="https://ceagesp.gov.br/cotacoes/" target="_blank" rel="noopener">boletim publicado pela CEAGESP</a>.
 </footer>
@@ -351,6 +357,63 @@ const escuro = () => document.documentElement.dataset.theme
 const cor = p => { const c = D.cores[p]; return !c ? '#898781' : (escuro() ? c.escuro : c.claro); };
 
 document.getElementById('atualizado').textContent = D.atualizado;
+
+/* ---------- coleta manual ----------
+   A pagina e estatica, entao o botao dispara o workflow do GitHub Actions
+   direto pela API. Isso exige um token (fine-grained, so este repositorio,
+   permissao Actions: read and write), que fica guardado apenas neste
+   navegador. Sem token, o botao leva para a pagina do Actions, onde da
+   para disparar pelo botao "Run workflow". */
+const REPO_GH  = 'tbrena/robo-ceagesp';
+const WORKFLOW = 'coleta-ceagesp.yml';
+const URL_ACTIONS = 'https://github.com/' + REPO_GH + '/actions/workflows/' + WORKFLOW;
+
+const btnColeta = document.getElementById('btnColeta');
+const stColeta  = document.getElementById('stColeta');
+const lerToken    = () => { try { return localStorage.getItem('tokenColeta'); } catch { return null; } };
+const salvarToken = t  => { try { localStorage.setItem('tokenColeta', t); } catch {} };
+const apagarToken = () => { try { localStorage.removeItem('tokenColeta'); } catch {} };
+
+btnColeta.addEventListener('click', async () => {
+  let token = lerToken();
+  if (!token) {
+    token = prompt(
+      'Para disparar a coleta daqui da página é preciso um token do GitHub\n' +
+      '(fine-grained, só para o repositório ' + REPO_GH + ',\n' +
+      'permissão "Actions: read and write"). Ele fica salvo só neste navegador.\n\n' +
+      'Cole o token abaixo — ou deixe em branco para abrir a página do GitHub\n' +
+      'e disparar por lá (botão "Run workflow").');
+    if (token != null) token = token.trim();
+    if (!token) { open(URL_ACTIONS, '_blank'); return; }
+  }
+  btnColeta.disabled = true;
+  stColeta.textContent = 'Disparando a coleta…';
+  try {
+    const r = await fetch('https://api.github.com/repos/' + REPO_GH +
+                          '/actions/workflows/' + WORKFLOW + '/dispatches', {
+      method: 'POST',
+      headers: { 'Authorization': 'Bearer ' + token,
+                 'Accept': 'application/vnd.github+json',
+                 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ref: 'main' }),
+    });
+    if (r.status === 204) {
+      salvarToken(token);
+      stColeta.textContent = 'Coleta disparada! Se houver boletim novo, ' +
+        'esta página é atualizada em uns 2 minutos — recarregue para ver.';
+    } else if (r.status === 401 || r.status === 403) {
+      apagarToken();
+      stColeta.textContent = 'O GitHub recusou o token. Clique de novo para informar outro.';
+    } else {
+      stColeta.textContent = 'Falha ao disparar (HTTP ' + r.status + '). Abrindo o GitHub…';
+      open(URL_ACTIONS, '_blank');
+    }
+  } catch {
+    stColeta.textContent = 'Não deu para falar com a API do GitHub. Abrindo o GitHub…';
+    open(URL_ACTIONS, '_blank');
+  }
+  btnColeta.disabled = false;
+});
 
 let ativos = new Set(D.produtos);
 
