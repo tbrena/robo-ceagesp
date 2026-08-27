@@ -374,6 +374,20 @@ const lerToken    = () => { try { return localStorage.getItem('tokenColeta'); } 
 const salvarToken = t  => { try { localStorage.setItem('tokenColeta', t); } catch {} };
 const apagarToken = () => { try { localStorage.removeItem('tokenColeta'); } catch {} };
 
+/* O token tambem pode vir no proprio link, para configurar o navegador de
+   outra pessoa sem ela precisar criar nada: basta enviar (em conversa
+   privada!) o endereco da pagina com "#token=github_pat_..." no final.
+   O token e guardado, some da barra de endereco e o botao passa a
+   funcionar direto. Ele nao pode ficar embutido no codigo da pagina:
+   este repositorio e publico e o GitHub revoga na hora qualquer token
+   que apareca publicado. */
+const mToken = location.hash.match(/[#&]token=([^&]+)/);
+if (mToken) {
+  salvarToken(decodeURIComponent(mToken[1]).trim());
+  history.replaceState(null, '', location.pathname + location.search);
+  stColeta.textContent = 'Pronto: o botão já está configurado neste navegador.';
+}
+
 btnColeta.addEventListener('click', async () => {
   let token = lerToken();
   if (!token) {

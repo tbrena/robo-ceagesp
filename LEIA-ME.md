@@ -46,6 +46,26 @@ variação percentual sobre o anterior, gráfico da série (em R$/kg ou indexado
 filtros por produto e período, tabela completa e download em CSV. Para reconstruir a
 página sem consultar o site: `python gerar_pagina.py`.
 
+### Botão "Buscar boletim agora"
+
+A página tem um botão que dispara a coleta na hora, direto pela API do GitHub. Ele
+precisa de um token (fine-grained, restrito a este repositório, permissão
+**Actions: read and write**), que fica salvo apenas no navegador de quem usa — nunca
+no código da página, porque o repositório é público e o GitHub revoga na hora qualquer
+token publicado.
+
+Para outra pessoa usar o botão sem precisar criar token: gere o token e mande a ela,
+**por conversa privada**, o endereço da página com o token no final:
+
+```
+https://tbrena.github.io/robo-ceagesp/#token=github_pat_...
+```
+
+Ao abrir o link uma única vez, o token é guardado no navegador dela, some da barra de
+endereço e o botão passa a funcionar direto. Se o token for trocado ou revogado, basta
+enviar um link novo. Sem token, o botão abre a aba Actions do repositório, onde quem
+tem acesso dispara pelo "Run workflow".
+
 Colunas: `data`, `categoria`, `produto`, `classificacao`, `unidade_peso`, `menor`, `comum`,
 `maior`, `quilo`, `coletado_em`. **Menor / Comum / Maior** são os preços em R$ —
 "Comum" é o valor mais praticado.
@@ -55,7 +75,7 @@ Log de execução em `logs/robo.log`.
 ## API para outros sistemas
 
 Os dados também saem em JSON e CSV estáticos, publicados junto com a página e atualizados
-nas mesmas duas coletas diárias. Não há servidor: são arquivos servidos por HTTPS pelo
+a cada coleta. Não há servidor: são arquivos servidos por HTTPS pelo
 GitHub Pages, que envia `Access-Control-Allow-Origin: *` — então dá para consumir até
 direto do navegador. Leitura apenas, sem autenticação.
 
