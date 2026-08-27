@@ -4,8 +4,8 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-08-13T01:41:16-03:00",
- "total": 352,
+ "atualizado_em": "2026-08-25T09:33:52-03:00",
+ "total": 374,
  "dados": [
   {
    "data": "2026-01-07",
@@ -3526,6 +3526,226 @@
    "menor": 12.71,
    "comum": 12.94,
    "maior": 13.2
+  },
+  {
+   "data": "2026-08-14",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.3,
+   "comum": 42.02,
+   "maior": 42.74
+  },
+  {
+   "data": "2026-08-14",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 27.0,
+   "comum": 27.5,
+   "maior": 28.0
+  },
+  {
+   "data": "2026-08-14",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.5,
+   "comum": 12.7,
+   "maior": 13.0
+  },
+  {
+   "data": "2026-08-14",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.71,
+   "comum": 12.94,
+   "maior": 13.2
+  },
+  {
+   "data": "2026-08-17",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.9,
+   "comum": 41.41,
+   "maior": 41.94
+  },
+  {
+   "data": "2026-08-17",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.0,
+   "comum": 9.5,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-08-17",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 24.86,
+   "comum": 25.09,
+   "maior": 25.43
+  },
+  {
+   "data": "2026-08-17",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.41,
+   "comum": 11.58,
+   "maior": 11.73
+  },
+  {
+   "data": "2026-08-17",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.07,
+   "comum": 12.26,
+   "maior": 12.44
+  },
+  {
+   "data": "2026-08-17",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 37.43,
+   "comum": 38.16,
+   "maior": 38.87
+  },
+  {
+   "data": "2026-08-19",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 42.04,
+   "comum": 42.7,
+   "maior": 43.36
+  },
+  {
+   "data": "2026-08-19",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.29,
+   "comum": 12.43,
+   "maior": 12.59
+  },
+  {
+   "data": "2026-08-19",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.0,
+   "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-08-21",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.64,
+   "comum": 42.12,
+   "maior": 42.54
+  },
+  {
+   "data": "2026-08-21",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 25.34,
+   "comum": 26.0,
+   "maior": 26.66
+  },
+  {
+   "data": "2026-08-21",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.0,
+   "comum": 14.0,
+   "maior": 15.0
+  },
+  {
+   "data": "2026-08-21",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.57,
+   "comum": 11.98,
+   "maior": 12.42
+  },
+  {
+   "data": "2026-08-21",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 37.5,
+   "comum": 38.25,
+   "maior": 39.0
+  },
+  {
+   "data": "2026-08-24",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 41.16,
+   "comum": 41.7,
+   "maior": 42.25
+  },
+  {
+   "data": "2026-08-24",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 13.0,
+   "comum": 14.0,
+   "maior": 15.0
+  },
+  {
+   "data": "2026-08-24",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.0,
+   "comum": 12.32,
+   "maior": 12.56
+  },
+  {
+   "data": "2026-08-24",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 38.0,
+   "comum": 39.0,
+   "maior": 40.0
   }
  ]
 }
