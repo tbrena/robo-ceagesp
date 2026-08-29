@@ -4,10 +4,10 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-08-27T16:10:41-03:00",
+ "atualizado_em": "2026-08-29T00:07:11-03:00",
  "produto": "TRUTA",
  "produto_id": "truta",
- "total": 70,
+ "total": 71,
  "dados": [
   {
    "data": "2026-01-07",
@@ -567,6 +567,14 @@
    "unidade": "KG",
    "menor": 38.0,
    "comum": 39.0,
+   "maior": 40.0
+  },
+  {
+   "data": "2026-08-28",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 35.0,
+   "comum": 38.0,
    "maior": 40.0
   }
  ]
