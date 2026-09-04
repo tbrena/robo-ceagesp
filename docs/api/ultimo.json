@@ -4,34 +4,58 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-09-02T17:51:15-03:00",
- "data": "2026-09-02",
- "data_anterior": "2026-08-31",
- "total": 2,
+ "atualizado_em": "2026-09-04T19:55:06-03:00",
+ "data": "2026-09-04",
+ "data_anterior": "2026-09-02",
+ "total": 4,
  "dados": [
   {
-   "data": "2026-09-02",
+   "data": "2026-09-04",
    "produto": "FILE DE TILAPIA",
    "produto_id": "file-de-tilapia",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 42.86,
-   "comum": 43.8,
-   "maior": 44.74,
-   "variacao_percentual": 4.43,
-   "comum_anterior": 41.94
+   "menor": 40.75,
+   "comum": 41.35,
+   "maior": 41.96,
+   "variacao_percentual": -5.59,
+   "comum_anterior": 43.8
   },
   {
-   "data": "2026-09-02",
+   "data": "2026-09-04",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 26.5,
+   "comum": 27.5,
+   "maior": 28.5,
+   "variacao_percentual": null,
+   "comum_anterior": null
+  },
+  {
+   "data": "2026-09-04",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.99,
+   "comum": 13.77,
+   "maior": 14.5,
+   "variacao_percentual": null,
+   "comum_anterior": null
+  },
+  {
+   "data": "2026-09-04",
    "produto": "TILÁPIA",
    "produto_id": "tilapia",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 12.04,
-   "comum": 12.55,
-   "maior": 13.02,
-   "variacao_percentual": 1.21,
-   "comum_anterior": 12.4
+   "menor": 11.87,
+   "comum": 12.29,
+   "maior": 12.74,
+   "variacao_percentual": -2.07,
+   "comum_anterior": 12.55
   }
  ]
 }

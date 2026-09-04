@@ -4,10 +4,10 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-09-02T17:51:15-03:00",
+ "atualizado_em": "2026-09-04T19:55:06-03:00",
  "produto": "PINTADO",
  "produto_id": "pintado",
- "total": 46,
+ "total": 47,
  "dados": [
   {
    "data": "2026-01-07",
@@ -376,6 +376,14 @@
    "menor": 22.0,
    "comum": 23.0,
    "maior": 24.0
+  },
+  {
+   "data": "2026-09-04",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 26.5,
+   "comum": 27.5,
+   "maior": 28.5
   }
  ]
 }
