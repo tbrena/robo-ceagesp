@@ -4,70 +4,34 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-09-18T17:41:55-03:00",
- "data": "2026-09-18",
- "data_anterior": "2026-09-16",
- "total": 5,
+ "atualizado_em": "2026-09-21T20:58:15-03:00",
+ "data": "2026-09-21",
+ "data_anterior": "2026-09-18",
+ "total": 2,
  "dados": [
   {
-   "data": "2026-09-18",
+   "data": "2026-09-21",
    "produto": "FILE DE TILAPIA",
    "produto_id": "file-de-tilapia",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 42.7,
-   "comum": 43.6,
-   "maior": 44.51,
-   "variacao_percentual": 3.49,
-   "comum_anterior": 42.13
+   "menor": 40.7,
+   "comum": 41.3,
+   "maior": 41.89,
+   "variacao_percentual": -5.28,
+   "comum_anterior": 43.6
   },
   {
-   "data": "2026-09-18",
-   "produto": "PINTADO",
-   "produto_id": "pintado",
-   "classificacao": "-",
-   "unidade": "KG",
-   "menor": 4.8,
-   "comum": 4.9,
-   "maior": 5.0,
-   "variacao_percentual": null,
-   "comum_anterior": null
-  },
-  {
-   "data": "2026-09-18",
-   "produto": "TAMBAQUI",
-   "produto_id": "tambaqui",
-   "classificacao": "-",
-   "unidade": "KG",
-   "menor": 11.78,
-   "comum": 12.07,
-   "maior": 12.48,
-   "variacao_percentual": null,
-   "comum_anterior": null
-  },
-  {
-   "data": "2026-09-18",
+   "data": "2026-09-21",
    "produto": "TILÁPIA",
    "produto_id": "tilapia",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 12.15,
-   "comum": 12.29,
-   "maior": 12.43,
-   "variacao_percentual": -1.13,
-   "comum_anterior": 12.43
-  },
-  {
-   "data": "2026-09-18",
-   "produto": "TRUTA",
-   "produto_id": "truta",
-   "classificacao": "-",
-   "unidade": "KG",
-   "menor": 37.0,
-   "comum": 37.5,
-   "maior": 38.0,
-   "variacao_percentual": 8.7,
-   "comum_anterior": 34.5
+   "menor": 11.83,
+   "comum": 12.22,
+   "maior": 12.67,
+   "variacao_percentual": -0.57,
+   "comum_anterior": 12.29
   }
  ]
 }
