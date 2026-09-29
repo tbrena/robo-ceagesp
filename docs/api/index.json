@@ -4,15 +4,15 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-09-28T10:26:47-03:00",
+ "atualizado_em": "2026-09-29T02:11:48-03:00",
  "descricao": "API estatica de cotacoes de pescado no atacado da CEAGESP.",
  "periodo": {
   "inicio": "2026-01-07",
-  "fim": "2026-09-25"
+  "fim": "2026-09-28"
  },
  "totais": {
-  "boletins": 96,
-  "registros": 426,
+  "boletins": 97,
+  "registros": 431,
   "produtos": 6
  },
  "endpoints": [
