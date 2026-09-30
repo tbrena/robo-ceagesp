@@ -18,13 +18,17 @@ A comparação ignora acentos e maiúsculas, mas o nome precisa bater com o do b
 
 1. Abre a página e lê a lista de datas com boletim publicado (a própria página traz essa
    lista embutida — é o que alimenta o calendário do site).
-2. Para cada data ainda não coletada, envia a consulta (`POST` com categoria + data) e
+2. Para cada data da lista, envia a consulta (`POST` com categoria + data) e
    lê a tabela de resultados.
-3. Filtra os produtos monitorados e grava.
+3. Filtra os produtos monitorados, valida os preços e grava o que for novo ou mudou.
 
-Rodar mais de uma vez no mesmo dia não duplica nada: o robô só busca as datas que ainda
-não estão no histórico. Se a máquina ficar dias desligada, ele recupera sozinho tudo o que
-o site ainda estiver exibindo (o site mantém cerca de 7 boletins).
+Rodar mais de uma vez no mesmo dia não duplica nada: data já gravada só é regravada se o
+boletim tiver **mudado no site** — a CEAGESP às vezes corrige um boletim depois de
+publicado (em 18/09/2026 o pintado saiu com o preço da pescada bicuda e foi corrigido em
+seguida), e o robô incorpora a correção na rodada seguinte. Como proteção extra, um preço
+que varie mais de 50% sobre a cotação anterior do produto é descartado com aviso no log
+(`--sem-validacao` grava mesmo assim). Se a máquina ficar dias desligada, ele recupera
+sozinho tudo o que o site ainda estiver exibindo (o site mantém cerca de 7 boletins).
 
 **Importante:** a CEAGESP publica o boletim **3 vezes por semana** (normalmente segunda,
 quarta e sexta), não todos os dias. Rodar diariamente é o certo — nos dias sem boletim novo
@@ -121,7 +125,7 @@ python robo_ceagesp.py
 
 | Comando | O que faz |
 |---|---|
-| `python robo_ceagesp.py` | coleta os boletins ainda não coletados (uso normal / agendado) |
+| `python robo_ceagesp.py` | coleta boletins novos e atualiza os que mudaram no site (uso normal / agendado) |
 | `python robo_ceagesp.py --data 03/08/2026` | coleta uma data específica |
 | `python robo_ceagesp.py --todas` | recoleta todas as datas que o site exibe |
 | `python robo_ceagesp.py --tudo` | coleta **todos** os pescados da categoria, não só a lista |

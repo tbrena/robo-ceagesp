@@ -6,7 +6,7 @@ Coleta diariamente os precos de atacado dos pescados de interesse
 em https://ceagesp.gov.br/cotacoes/ e acumula o historico.
 
 Uso:
-    python robo_ceagesp.py                  # coleta o(s) boletim(ns) ainda nao coletado(s)
+    python robo_ceagesp.py                  # coleta boletins novos e atualiza os que mudaram no site
     python robo_ceagesp.py --data 03/08/2026  # coleta uma data especifica
     python robo_ceagesp.py --todas          # recoleta todas as datas disponiveis no site
     python robo_ceagesp.py --tudo           # coleta todos os produtos da categoria (nao so os da lista)
@@ -209,6 +209,15 @@ def coletar_boletim(sessao, data, todos_produtos=False):
     return linhas
 
 
+def assinatura(registros):
+    """Resumo comparavel do conteudo de um boletim (ignora coletado_em), usado
+    para detectar se o site alterou um boletim ja gravado."""
+    return sorted((normalizar(r["produto"]), r.get("classificacao") or "",
+                   normalizar(r.get("unidade_peso")), r.get("menor"), r.get("comum"),
+                   r.get("maior"), r.get("quilo"))
+                  for r in registros)
+
+
 def validar_precos(linhas, historico, data):
     """Compara cada linha coletada com a ultima cotacao anterior do mesmo
     produto/classificacao e descarta as que variarem alem de LIMITE_VARIACAO.
@@ -347,10 +356,12 @@ def main():
         alvo = [args.data]
         if args.data not in disponiveis:
             log.warning("A data %s nao consta na lista do site; consultando assim mesmo.", args.data)
-    elif args.todas:
-        alvo = disponiveis
     else:
-        alvo = [d for d in disponiveis if d not in ja_coletadas]
+        # Consulta todas as datas ainda publicadas no site: as novas entram no
+        # historico e as ja coletadas so sao regravadas se o boletim mudou
+        # (a CEAGESP corrige boletins depois de publicados - em 18/09/2026 o
+        # pintado saiu com o preco da pescada bicuda e foi corrigido em seguida).
+        alvo = disponiveis
 
     if not alvo:
         log.info("Nenhum boletim novo. Historico ja esta em dia (%d registros).", len(historico))
@@ -364,13 +375,24 @@ def main():
 
     novos = []
     for data in alvo:
+        reconferencia = data in ja_coletadas and not (args.data or args.todas)
         log.info("Consultando boletim de %s...", data)
         linhas = coletar_boletim(sessao, data, todos_produtos=args.tudo)
+        time.sleep(2)  # gentileza com o servidor
         if linhas and not args.sem_validacao:
             linhas = validar_precos(linhas, historico, data)
         if not linhas:
-            log.warning("Boletim de %s nao trouxe nenhum produto de interesse.", data)
+            if reconferencia:
+                # Sem tabela ou sem produtos de interesse: mantem o que ja esta
+                # gravado em vez de apagar o dia por uma falha do site.
+                log.info("Boletim de %s nao retornou dados - mantendo o registro atual.", data)
+            else:
+                log.warning("Boletim de %s nao trouxe nenhum produto de interesse.", data)
             continue
+        if reconferencia:
+            if assinatura(linhas) == assinatura(r for r in historico if r["data"] == data):
+                continue  # boletim identico ao gravado - nada a fazer
+            log.warning("Boletim de %s MUDOU no site - atualizando o historico.", data)
         gravar_csv(os.path.join(DIR_DADOS, "boletim_%s.csv"
                                 % datetime.strptime(data, "%d/%m/%Y").strftime("%Y-%m-%d")),
                    ordenar(linhas))
@@ -378,7 +400,6 @@ def main():
             log.info("   %-18s %-3s  menor %-7s comum %-7s maior %-7s",
                      l["produto"], l["classificacao"], l["menor"], l["comum"], l["maior"])
         novos.extend(linhas)
-        time.sleep(2)  # gentileza com o servidor
 
     if not novos:
         log.info("Nada novo gravado.")
