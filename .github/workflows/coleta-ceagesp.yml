@@ -81,8 +81,10 @@ jobs:
       # conta propria: em 06/08/2026 ficou preso na fila e expirou, deixando o
       # site com dados velhos enquanto esta coleta constava como bem-sucedida.
       # Aqui esse silencio vira falha visivel (e o GitHub avisa por e-mail).
+      # So no main: o Pages publica a partir do main, entao uma coleta rodada
+      # em outra branch nao tem build para esperar.
       - name: Confirmar que o site publicou
-        if: steps.gravar.outputs.publicou == 'true'
+        if: steps.gravar.outputs.publicou == 'true' && github.ref == 'refs/heads/main'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

@@ -65,6 +65,13 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 TENTATIVAS = 3
 ESPERA_ENTRE_TENTATIVAS = 10  # segundos
 
+# Variacao maxima aceita do preco "comum" em relacao a cotacao anterior do
+# mesmo produto (1.5 = 50% para cima ou para baixo). Em 18/09/2026 o boletim
+# do site saiu com o preco da pescada bicuda na linha do pintado (R$ 4,90 em
+# vez de ~R$ 27) e o valor entrou no historico; este limite descarta esse tipo
+# de registro. Para gravar mesmo assim, use --sem-validacao.
+LIMITE_VARIACAO = 1.5
+
 
 # --------------------------------------------------------------------------
 # INFRAESTRUTURA
@@ -202,6 +209,38 @@ def coletar_boletim(sessao, data, todos_produtos=False):
     return linhas
 
 
+def validar_precos(linhas, historico, data):
+    """Compara cada linha coletada com a ultima cotacao anterior do mesmo
+    produto/classificacao e descarta as que variarem alem de LIMITE_VARIACAO.
+    Produto sem cotacao anterior passa sem validacao."""
+    dt_boletim = datetime.strptime(data, "%d/%m/%Y")
+
+    referencias = {}
+    for r in historico:
+        if not r.get("comum"):
+            continue
+        dt = datetime.strptime(r["data"], "%d/%m/%Y")
+        if dt >= dt_boletim:
+            continue
+        k = (normalizar(r["produto"]), r.get("classificacao") or "")
+        if k not in referencias or dt > datetime.strptime(referencias[k]["data"], "%d/%m/%Y"):
+            referencias[k] = r
+
+    aprovadas = []
+    for l in linhas:
+        ref = referencias.get((normalizar(l["produto"]), l.get("classificacao") or ""))
+        if ref and l.get("comum") and not (
+                ref["comum"] / LIMITE_VARIACAO <= l["comum"] <= ref["comum"] * LIMITE_VARIACAO):
+            log.warning("Boletim de %s: '%s' DESCARTADO - preco comum %.2f varia mais de "
+                        "%d%% sobre a cotacao de %s (%.2f). Se o valor estiver correto, "
+                        "recolete com --data %s --sem-validacao.",
+                        data, l["produto"], l["comum"], round((LIMITE_VARIACAO - 1) * 100),
+                        ref["data"], ref["comum"], data)
+            continue
+        aprovadas.append(l)
+    return aprovadas
+
+
 # --------------------------------------------------------------------------
 # ARMAZENAMENTO
 # --------------------------------------------------------------------------
@@ -286,6 +325,9 @@ def main():
                     help="recoleta todas as datas disponiveis no site")
     ap.add_argument("--tudo", action="store_true",
                     help="coleta todos os produtos da categoria, nao so a lista configurada")
+    ap.add_argument("--sem-validacao", action="store_true",
+                    help="grava os precos mesmo com variacao acima de %d%% sobre a "
+                         "cotacao anterior" % round((LIMITE_VARIACAO - 1) * 100))
     args = ap.parse_args()
 
     os.makedirs(DIR_DADOS, exist_ok=True)
@@ -324,6 +366,8 @@ def main():
     for data in alvo:
         log.info("Consultando boletim de %s...", data)
         linhas = coletar_boletim(sessao, data, todos_produtos=args.tudo)
+        if linhas and not args.sem_validacao:
+            linhas = validar_precos(linhas, historico, data)
         if not linhas:
             log.warning("Boletim de %s nao trouxe nenhum produto de interesse.", data)
             continue
@@ -340,9 +384,11 @@ def main():
         log.info("Nada novo gravado.")
         return 0
 
-    # Junta com o historico substituindo registros repetidos (data+produto+classificacao)
+    # Junta com o historico substituindo POR COMPLETO cada data recoletada:
+    # um produto que saiu do boletim (ex.: correcao do site) tambem sai daqui.
     chave = lambda r: (r["data"], normalizar(r["produto"]), r.get("classificacao") or "")
-    consolidado = {chave(r): r for r in historico}
+    datas_novas = {r["data"] for r in novos}
+    consolidado = {chave(r): r for r in historico if r["data"] not in datas_novas}
     consolidado.update({chave(r): r for r in novos})
     historico = ordenar(list(consolidado.values()))
 
