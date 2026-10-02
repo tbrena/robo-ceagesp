@@ -4,58 +4,70 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-09-30T19:04:49-03:00",
- "data": "2026-09-30",
- "data_anterior": "2026-09-28",
- "total": 4,
+ "atualizado_em": "2026-10-02T19:01:48-03:00",
+ "data": "2026-10-02",
+ "data_anterior": "2026-09-30",
+ "total": 5,
  "dados": [
   {
-   "data": "2026-09-30",
+   "data": "2026-10-02",
    "produto": "FILE DE TILAPIA",
    "produto_id": "file-de-tilapia",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 40.29,
-   "comum": 40.88,
-   "maior": 41.48,
-   "variacao_percentual": 3.44,
-   "comum_anterior": 39.52
+   "menor": 41.23,
+   "comum": 41.96,
+   "maior": 42.7,
+   "variacao_percentual": 2.64,
+   "comum_anterior": 40.88
   },
   {
-   "data": "2026-09-30",
+   "data": "2026-10-02",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 26.0,
+   "comum": 27.0,
+   "maior": 28.0,
+   "variacao_percentual": null,
+   "comum_anterior": null
+  },
+  {
+   "data": "2026-10-02",
    "produto": "TAMBAQUI",
    "produto_id": "tambaqui",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 10.0,
-   "comum": 11.0,
-   "maior": 12.0,
-   "variacao_percentual": -24.14,
-   "comum_anterior": 14.5
+   "menor": 12.5,
+   "comum": 13.25,
+   "maior": 14.0,
+   "variacao_percentual": 20.45,
+   "comum_anterior": 11.0
   },
   {
-   "data": "2026-09-30",
+   "data": "2026-10-02",
    "produto": "TILÁPIA",
    "produto_id": "tilapia",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 12.19,
-   "comum": 12.45,
-   "maior": 12.68,
-   "variacao_percentual": 4.62,
-   "comum_anterior": 11.9
+   "menor": 11.89,
+   "comum": 12.18,
+   "maior": 12.42,
+   "variacao_percentual": -2.17,
+   "comum_anterior": 12.45
   },
   {
-   "data": "2026-09-30",
+   "data": "2026-10-02",
    "produto": "TRUTA",
    "produto_id": "truta",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 38.0,
-   "comum": 39.0,
-   "maior": 40.0,
-   "variacao_percentual": 34.48,
-   "comum_anterior": 29.0
+   "menor": 36.59,
+   "comum": 37.59,
+   "maior": 38.58,
+   "variacao_percentual": -3.62,
+   "comum_anterior": 39.0
   }
  ]
 }

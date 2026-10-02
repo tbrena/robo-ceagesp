@@ -4,10 +4,10 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-09-30T19:04:49-03:00",
+ "atualizado_em": "2026-10-02T19:01:48-03:00",
  "produto": "TAMBAQUI",
  "produto_id": "tambaqui",
- "total": 65,
+ "total": 66,
  "dados": [
   {
    "data": "2026-01-07",
@@ -528,6 +528,14 @@
    "menor": 10.0,
    "comum": 11.0,
    "maior": 12.0
+  },
+  {
+   "data": "2026-10-02",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 12.5,
+   "comum": 13.25,
+   "maior": 14.0
   }
  ]
 }
