@@ -443,3 +443,6 @@ data,produto,produto_id,classificacao,unidade,menor,comum,maior
 "2026-10-05","TAMBAQUI","tambaqui","-","KG",11.75,12.35,13.00
 "2026-10-05","TILÁPIA","tilapia","-","KG",11.86,12.15,12.40
 "2026-10-05","TRUTA","truta","-","KG",36.59,37.59,38.58
+"2026-10-07","FILE DE TILAPIA","file-de-tilapia","-","KG",43.55,44.50,45.44
+"2026-10-07","TAMBAQUI","tambaqui","-","KG",11.00,11.50,12.00
+"2026-10-07","TILÁPIA","tilapia","-","KG",10.65,11.04,11.38

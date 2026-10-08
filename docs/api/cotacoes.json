@@ -4,8 +4,8 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-10-05T18:55:22-03:00",
- "total": 444,
+ "atualizado_em": "2026-10-07T21:52:16-03:00",
+ "total": 447,
  "dados": [
   {
    "data": "2026-01-07",
@@ -4446,6 +4446,36 @@
    "menor": 36.59,
    "comum": 37.59,
    "maior": 38.58
+  },
+  {
+   "data": "2026-10-07",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 43.55,
+   "comum": 44.5,
+   "maior": 45.44
+  },
+  {
+   "data": "2026-10-07",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.0,
+   "comum": 11.5,
+   "maior": 12.0
+  },
+  {
+   "data": "2026-10-07",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 10.65,
+   "comum": 11.04,
+   "maior": 11.38
   }
  ]
 }

@@ -4,70 +4,46 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-10-05T18:55:22-03:00",
- "data": "2026-10-05",
- "data_anterior": "2026-10-02",
- "total": 5,
+ "atualizado_em": "2026-10-07T21:52:16-03:00",
+ "data": "2026-10-07",
+ "data_anterior": "2026-10-05",
+ "total": 3,
  "dados": [
   {
-   "data": "2026-10-05",
+   "data": "2026-10-07",
    "produto": "FILE DE TILAPIA",
    "produto_id": "file-de-tilapia",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 40.91,
-   "comum": 41.55,
-   "maior": 42.21,
-   "variacao_percentual": -0.98,
-   "comum_anterior": 41.96
+   "menor": 43.55,
+   "comum": 44.5,
+   "maior": 45.44,
+   "variacao_percentual": 7.1,
+   "comum_anterior": 41.55
   },
   {
-   "data": "2026-10-05",
-   "produto": "PINTADO",
-   "produto_id": "pintado",
-   "classificacao": "-",
-   "unidade": "KG",
-   "menor": 26.0,
-   "comum": 27.0,
-   "maior": 28.0,
-   "variacao_percentual": 0.0,
-   "comum_anterior": 27.0
-  },
-  {
-   "data": "2026-10-05",
+   "data": "2026-10-07",
    "produto": "TAMBAQUI",
    "produto_id": "tambaqui",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 11.75,
-   "comum": 12.35,
-   "maior": 13.0,
-   "variacao_percentual": -6.79,
-   "comum_anterior": 13.25
+   "menor": 11.0,
+   "comum": 11.5,
+   "maior": 12.0,
+   "variacao_percentual": -6.88,
+   "comum_anterior": 12.35
   },
   {
-   "data": "2026-10-05",
+   "data": "2026-10-07",
    "produto": "TILÁPIA",
    "produto_id": "tilapia",
    "classificacao": "-",
    "unidade": "KG",
-   "menor": 11.86,
-   "comum": 12.15,
-   "maior": 12.4,
-   "variacao_percentual": -0.25,
-   "comum_anterior": 12.18
-  },
-  {
-   "data": "2026-10-05",
-   "produto": "TRUTA",
-   "produto_id": "truta",
-   "classificacao": "-",
-   "unidade": "KG",
-   "menor": 36.59,
-   "comum": 37.59,
-   "maior": 38.58,
-   "variacao_percentual": 0.0,
-   "comum_anterior": 37.59
+   "menor": 10.65,
+   "comum": 11.04,
+   "maior": 11.38,
+   "variacao_percentual": -9.14,
+   "comum_anterior": 12.15
   }
  ]
 }
