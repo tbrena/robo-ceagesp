@@ -4,13 +4,13 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-10-21T18:27:36-03:00",
- "data": "2026-10-21",
- "data_anterior": "2026-10-19",
+ "atualizado_em": "2026-10-23T18:14:34-03:00",
+ "data": "2026-10-23",
+ "data_anterior": "2026-10-21",
  "total": 4,
  "dados": [
   {
-   "data": "2026-10-21",
+   "data": "2026-10-23",
    "produto": "FILE DE TILAPIA",
    "produto_id": "file-de-tilapia",
    "classificacao": "-",
@@ -18,11 +18,11 @@
    "menor": 39.93,
    "comum": 40.44,
    "maior": 40.96,
-   "variacao_percentual": -1.17,
-   "comum_anterior": 40.92
+   "variacao_percentual": 0.0,
+   "comum_anterior": 40.44
   },
   {
-   "data": "2026-10-21",
+   "data": "2026-10-23",
    "produto": "PINTADO",
    "produto_id": "pintado",
    "classificacao": "-",
@@ -34,7 +34,7 @@
    "comum_anterior": 27.0
   },
   {
-   "data": "2026-10-21",
+   "data": "2026-10-23",
    "produto": "TILÁPIA",
    "produto_id": "tilapia",
    "classificacao": "-",
@@ -42,11 +42,11 @@
    "menor": 11.72,
    "comum": 12.08,
    "maior": 12.36,
-   "variacao_percentual": -0.49,
-   "comum_anterior": 12.14
+   "variacao_percentual": 0.0,
+   "comum_anterior": 12.08
   },
   {
-   "data": "2026-10-21",
+   "data": "2026-10-23",
    "produto": "TRUTA",
    "produto_id": "truta",
    "classificacao": "-",
@@ -54,8 +54,8 @@
    "menor": 36.5,
    "comum": 37.5,
    "maior": 38.5,
-   "variacao_percentual": -1.32,
-   "comum_anterior": 38.0
+   "variacao_percentual": 0.0,
+   "comum_anterior": 37.5
   }
  ]
 }
