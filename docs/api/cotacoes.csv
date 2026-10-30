@@ -480,3 +480,8 @@ data,produto,produto_id,classificacao,unidade,menor,comum,maior
 "2026-10-26","TRUTA","truta","-","KG",36.93,37.93,38.93
 "2026-10-28","FILE DE TILAPIA","file-de-tilapia","-","KG",39.90,40.79,41.67
 "2026-10-28","TILÁPIA","tilapia","-","KG",12.00,12.49,12.98
+"2026-10-30","FILE DE TILAPIA","file-de-tilapia","-","KG",41.67,42.34,43.02
+"2026-10-30","PANGASIUS","pangasius","-","KG",11.00,11.50,12.00
+"2026-10-30","PINTADO","pintado","-","KG",23.40,23.98,24.54
+"2026-10-30","TAMBAQUI","tambaqui","-","KG",11.24,11.79,12.35
+"2026-10-30","TILÁPIA","tilapia","-","KG",11.22,11.62,12.05

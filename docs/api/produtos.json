@@ -4,38 +4,38 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-10-28T21:41:41-03:00",
+ "atualizado_em": "2026-10-30T19:06:36-03:00",
  "total": 6,
  "dados": [
   {
    "produto": "FILE DE TILAPIA",
    "produto_id": "file-de-tilapia",
    "url": "https://tbrena.github.io/robo-ceagesp/api/produto/file-de-tilapia.json",
-   "boletins": 109
+   "boletins": 110
   },
   {
    "produto": "PANGASIUS",
    "produto_id": "pangasius",
    "url": "https://tbrena.github.io/robo-ceagesp/api/produto/pangasius.json",
-   "boletins": 43
+   "boletins": 44
   },
   {
    "produto": "PINTADO",
    "produto_id": "pintado",
    "url": "https://tbrena.github.io/robo-ceagesp/api/produto/pintado.json",
-   "boletins": 59
+   "boletins": 60
   },
   {
    "produto": "TAMBAQUI",
    "produto_id": "tambaqui",
    "url": "https://tbrena.github.io/robo-ceagesp/api/produto/tambaqui.json",
-   "boletins": 73
+   "boletins": 74
   },
   {
    "produto": "TILÁPIA",
    "produto_id": "tilapia",
    "url": "https://tbrena.github.io/robo-ceagesp/api/produto/tilapia.json",
-   "boletins": 109
+   "boletins": 110
   },
   {
    "produto": "TRUTA",
