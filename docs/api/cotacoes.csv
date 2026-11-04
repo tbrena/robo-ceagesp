@@ -485,3 +485,6 @@ data,produto,produto_id,classificacao,unidade,menor,comum,maior
 "2026-10-30","PINTADO","pintado","-","KG",23.40,23.98,24.54
 "2026-10-30","TAMBAQUI","tambaqui","-","KG",11.24,11.79,12.35
 "2026-10-30","TILÁPIA","tilapia","-","KG",11.22,11.62,12.05
+"2026-11-04","FILE DE TILAPIA","file-de-tilapia","-","KG",42.77,43.69,44.62
+"2026-11-04","TAMBAQUI","tambaqui","-","KG",12.00,12.30,12.50
+"2026-11-04","TILÁPIA","tilapia","-","KG",11.18,11.66,12.11
