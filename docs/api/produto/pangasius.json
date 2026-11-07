@@ -4,10 +4,10 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-11-04T18:10:39-03:00",
+ "atualizado_em": "2026-11-07T06:48:49-03:00",
  "produto": "PANGASIUS",
  "produto_id": "pangasius",
- "total": 44,
+ "total": 45,
  "dados": [
   {
    "data": "2026-01-07",
@@ -355,6 +355,14 @@
   },
   {
    "data": "2026-10-30",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.0,
+   "comum": 11.5,
+   "maior": 12.0
+  },
+  {
+   "data": "2026-11-06",
    "classificacao": "-",
    "unidade": "KG",
    "menor": 11.0,
