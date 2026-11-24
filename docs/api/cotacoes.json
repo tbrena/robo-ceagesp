@@ -4,8 +4,8 @@
  "categoria": "PESCADOS",
  "moeda": "BRL",
  "observacao": "Precos de venda no atacado, em R$ por unidade indicada. 'comum' e o valor mais praticado. Levantamento proprio a partir dos boletins publicos da CEAGESP; nao e publicacao oficial.",
- "atualizado_em": "2026-11-18T23:25:25-03:00",
- "total": 521,
+ "atualizado_em": "2026-11-23T23:04:03-03:00",
+ "total": 527,
  "dados": [
   {
    "data": "2026-01-07",
@@ -5209,6 +5209,66 @@
   },
   {
    "data": "2026-11-18",
+   "produto": "TRUTA",
+   "produto_id": "truta",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 36.0,
+   "comum": 37.0,
+   "maior": 38.0
+  },
+  {
+   "data": "2026-11-23",
+   "produto": "FILE DE TILAPIA",
+   "produto_id": "file-de-tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 40.65,
+   "comum": 41.26,
+   "maior": 41.89
+  },
+  {
+   "data": "2026-11-23",
+   "produto": "PANGASIUS",
+   "produto_id": "pangasius",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 9.0,
+   "comum": 9.5,
+   "maior": 10.0
+  },
+  {
+   "data": "2026-11-23",
+   "produto": "PINTADO",
+   "produto_id": "pintado",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 24.5,
+   "comum": 25.5,
+   "maior": 26.5
+  },
+  {
+   "data": "2026-11-23",
+   "produto": "TAMBAQUI",
+   "produto_id": "tambaqui",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.5,
+   "comum": 12.08,
+   "maior": 12.67
+  },
+  {
+   "data": "2026-11-23",
+   "produto": "TILÁPIA",
+   "produto_id": "tilapia",
+   "classificacao": "-",
+   "unidade": "KG",
+   "menor": 11.02,
+   "comum": 11.52,
+   "maior": 12.03
+  },
+  {
+   "data": "2026-11-23",
    "produto": "TRUTA",
    "produto_id": "truta",
    "classificacao": "-",
