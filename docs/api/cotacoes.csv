@@ -529,3 +529,6 @@ data,produto,produto_id,classificacao,unidade,menor,comum,maior
 "2026-11-25","FILE DE TILAPIA","file-de-tilapia","-","KG",40.73,41.27,41.83
 "2026-11-25","TILÁPIA","tilapia","-","KG",12.45,12.68,12.96
 "2026-11-25","TRUTA","truta","-","KG",36.00,37.00,38.00
+"2026-11-27","FILE DE TILAPIA","file-de-tilapia","-","KG",41.50,42.39,43.26
+"2026-11-27","TILÁPIA","tilapia","-","KG",12.30,12.62,12.97
+"2026-11-27","TRUTA","truta","-","KG",37.00,38.00,39.00
